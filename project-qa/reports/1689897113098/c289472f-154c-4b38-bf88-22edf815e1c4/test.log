@@ -1,0 +1,41 @@
+[2023-07-20 11:51:58] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-20 11:51:58] [1] [INFO] TEST [carina-project - testShowUpdatedUser] STARTED at [19:51:58 2023-07-20]
+[2023-07-20 11:52:01] [1] [INFO] Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+HTTP/1.1 200 OK
+Date: Thu, 20 Jul 2023 23:52:01 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"50-nIjNm5wznifWaPKnDYTFmC2zH+o"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TbRSziSTka%2FrcUsZuy%2BeKo82cAT9Hjz7cy8wJ92556R8s8HV0AjyfSqLMLRjVvP8WImiKbHqcR%2Bn%2By%2FmisTMkpzIuWfcQDstqWcygksIc6%2FHiK87DIivJP326Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 7e9f1d8f7e818dbe-MIA
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2023-07-20T23:52:01.389Z"
+}
+
+[2023-07-20 11:52:01] [1] [INFO] TEST [carina-project - testShowUpdatedUser] PASSED at [19:52:01 2023-07-20]
