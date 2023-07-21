@@ -9,14 +9,13 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/register", methodType = HttpMethodType.POST)
-@RequestTemplatePath(path = "api/users/_post/rq.json")
-@ResponseTemplatePath(path = "api/users/_post/rs.json")
+@Endpoint(url = "${base_url}/users/2", methodType = HttpMethodType.PUT)
+@RequestTemplatePath(path = "api/users/_put/rq.json")
+@ResponseTemplatePath(path = "api/users/_put/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class PostUserMethod extends AbstractApiMethodV2 {
 
-    public PostUserMethod() {
-        super("api/users/_post/rq.json", "api/users/_post/rs.json");
+public class PutUserMethod extends AbstractApiMethodV2 {
+    public PutUserMethod(){
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
     }
 }
