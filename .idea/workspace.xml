@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add git.ignore" />
+    <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add git.ignore">
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897000805/63879080-ec2d-4a96-ad7f-f89c412fba91/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897000805/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897000805/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +59,7 @@
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APISampleTest.testShowUpdatedUser">
+  <component name="RunManager" selected="TestNG.APISampleTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -173,9 +181,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APISampleTest" />
         <item itemvalue="TestNG.APISampleTest.testShowUpdatedUser" />
         <item itemvalue="TestNG.APISampleTest.testDeleteUsers" />
-        <item itemvalue="TestNG.APISampleTest" />
         <item itemvalue="TestNG.APISampleTest.testUpdateUser" />
         <item itemvalue="TestNG.APISampleTest.testGetListOfUsers" />
       </list>
@@ -204,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689898024306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add git.ignore">
+      <created>1689898247304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689898247304</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

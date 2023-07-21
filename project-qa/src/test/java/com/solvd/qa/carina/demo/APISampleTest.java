@@ -64,7 +64,6 @@ public class APISampleTest implements IAbstractTest {
         api.callAPI();
         System.out.println("name:"+(api.getRequest()).contentType("name"));
 
-
     }
 
 
