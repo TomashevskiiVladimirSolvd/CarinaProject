@@ -8,12 +8,12 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/api/users", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/reqres/_get/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetReqresMethods extends AbstractApiMethodV2 {
+@Endpoint(url = "${base_url}/api/users/2", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "api/reqres/_get/rsnotfound.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.NOT_FOUND_404)
+public class GetUserNotFound extends AbstractApiMethodV2 {
 
-    public GetReqresMethods() {
+    public GetUserNotFound() {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
     }
 }

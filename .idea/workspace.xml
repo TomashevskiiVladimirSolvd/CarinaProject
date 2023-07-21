@@ -5,22 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add git.ignore">
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUserNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostLoginUnsuccessful.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsnotfound.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rssingle.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rssingle.schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rqlog.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rslog.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/DeleteUserMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/DeleteReqresMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUserMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetReqresMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostUserMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostReqresMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PutUserMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PutReqresMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_delete/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_delete/rs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_get/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_get/rs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rs.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_post/rq.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_post/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_put/rq.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_put/rq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_put/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_put/rs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897137774/2eeabf62-3fde-40ed-ab3e-699bf8e0f4e2/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897137774/33b5a1c6-b79a-4bf3-a374-54217ccc3a43/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897137774/c4bbdcfe-6416-40a0-87ca-d907266256c1/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897137774/de0f4856-2eca-4be3-a09d-440ad6212297/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897137774/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897137774/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897318986/e7fb8ca3-e600-43c5-9b05-48a7a78296e9/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897318986/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897318986/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897424433/4386ff73-330a-4223-b829-0afd936d5573/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897424433/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897424433/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897456446/6d42069d-2e6d-4480-989f-0040d02677dc/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897456446/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897456446/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897616448/17c8ac90-46a7-4873-ae35-2421bd3b93e0/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897616448/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897616448/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/DeleteReqresMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetReqresMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PutReqresMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_delete/rs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_put/rq.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_put/rs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/APISampleTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +88,7 @@
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APISampleTest">
+  <component name="RunManager" selected="TestNG.APIReqresTest.testRequestSingleUserNotFound">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -99,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APISampleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +128,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APISampleTest" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -116,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APISampleTest.testDeleteUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testCreateLog" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -125,8 +145,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APISampleTest" />
-      <option name="METHOD_NAME" value="testDeleteUsers" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
+      <option name="METHOD_NAME" value="testCreateLog" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,7 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APISampleTest.testGetListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testGetSingleUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -143,8 +163,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APISampleTest" />
-      <option name="METHOD_NAME" value="testGetListOfUsers" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
+      <option name="METHOD_NAME" value="testGetSingleUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -152,7 +172,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APISampleTest.testShowUpdatedUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testRequestSingleUserNotFound" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -161,26 +181,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APISampleTest" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
+      <option name="METHOD_NAME" value="testRequestSingleUserNotFound" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APIReqresTest.testShowUpdatedUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
       <option name="METHOD_NAME" value="testShowUpdatedUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="APISampleTest.testUpdateUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="project-qa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APISampleTest" />
-      <option name="METHOD_NAME" value="testUpdateUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -190,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.APISampleTest" />
-        <item itemvalue="TestNG.APISampleTest.testShowUpdatedUser" />
-        <item itemvalue="TestNG.APISampleTest.testDeleteUsers" />
-        <item itemvalue="TestNG.APISampleTest.testUpdateUser" />
-        <item itemvalue="TestNG.APISampleTest.testGetListOfUsers" />
+        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUserNotFound" />
+        <item itemvalue="TestNG.APIReqresTest" />
+        <item itemvalue="TestNG.APIReqresTest.testGetSingleUser" />
+        <item itemvalue="TestNG.APIReqresTest.testCreateLog" />
+        <item itemvalue="TestNG.APIReqresTest.testShowUpdatedUser" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689905244819</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add git.ignore">
+      <created>1689906126490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689906126490</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add git.ignore">
+      <created>1689906219914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689906219914</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
