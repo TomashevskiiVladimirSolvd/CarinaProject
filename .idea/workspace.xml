@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add git.ignore">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897000805/63879080-ec2d-4a96-ad7f-f89c412fba91/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897000805/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897000805/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/DeleteUserMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/DeleteReqresMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUserMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetReqresMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostUserMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostReqresMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PutUserMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PutReqresMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APISampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_delete/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_delete/rs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_get/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_get/rs.schema" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rs.schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_post/rq.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rq.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_post/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_put/rq.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_put/rq.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/_put/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_put/rs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/users/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/user.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,8 +228,26 @@
       <option name="project" value="LOCAL" />
       <updated>1689898247304</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add git.ignore">
+      <created>1689905244819</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689905244819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add git.ignore" />

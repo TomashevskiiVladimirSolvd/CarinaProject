@@ -8,9 +8,12 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/users", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/resources/_get/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
+@Endpoint(url = "${base_url}/api/users/1", methodType = HttpMethodType.DELETE)
+@ResponseTemplatePath(path = "api/users/reqres/rs.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.NO_CONTENT_204)
+public class DeleteReqresMethod extends AbstractApiMethodV2 {
 
-public class GetResourceMethod {
+    public DeleteReqresMethod() {
+        replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
+    }
 }
