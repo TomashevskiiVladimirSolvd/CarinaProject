@@ -8,12 +8,11 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/api/users/299", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/reqres/_get/rsnotfound.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.NOT_FOUND_404)
-public class GetUserNotFound extends AbstractApiMethodV2 {
-
-    public GetUserNotFound() {
+@Endpoint(url = "${base_url}/api/users?delay=3", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "api/reqres/_get/rsdelay.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
+public class GetDelayed extends AbstractApiMethodV2{
+    public GetDelayed(){
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
     }
 }

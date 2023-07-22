@@ -4,16 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add negative methods">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsresources.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsresources.schema" afterDir="false" />
+    <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add methods">
+      <change afterPath="$PROJECT_DIR$/project-qa/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetDelayed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostRegisterUnsuccessful.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsdelay.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsdelay.schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsresource.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsresource.schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsresourcenotfound.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rqcreate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_post/rscreate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897692547/5599e038-f0f4-4b57-8f03-a3114fb15120/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897692547/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/1689897692547/test.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUserNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetUserNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostReqresMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/PostRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_testdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_testdata.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/mybatis-config.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonS3Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AutoDownloadTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/CryptoSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/CustomDataProvidersSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/DBSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/IOSPreferencesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/IOSSafariTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/MobileDragAndDropTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/MobileSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/PageOpeningStrategySampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/ProxySampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/SoapSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebLocalizationSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleSingleDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsnotfound.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsnotfound.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/soap/addinteger/rq.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/soap/addinteger/rs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/soap/lookupcity/rq.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/soap/lookupcity/rs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/soap/soap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/data_source/calculator.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/data_source/finances.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/helloWorld.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/proxy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/soap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/_database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/_testdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/classes/_testdata.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/api/soap/addinteger/rq.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/api/soap/addinteger/rs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/api/soap/lookupcity/rq.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/api/soap/lookupcity/rs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/api/soap/soap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/AmazonS3Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/AutoDownloadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/CryptoSampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/CustomDataProvidersSampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/DBSampleTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/DBSampleTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/DBSampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/IOSPreferencesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/IOSSafariTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/MobileDragAndDropTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/MobileSampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/PageOpeningStrategySampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/ProxySampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/SoapSampleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/WebLocalizationSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/WebSampleSingleDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/WebSampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/WebSampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/data_source/calculator.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/data_source/finances.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/helloWorld.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/proxy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/soap.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +121,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/virasamarska/IdeaProjects/carina-project",
-    "project-qa.wasFacetEverAdded": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/virasamarska/IdeaProjects/carina-project&quot;,
+    &quot;project-qa.wasFacetEverAdded&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project-qa" />
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar" />
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APIReqresTest.testRequestListOfResources">
+  <component name="RunManager" selected="TestNG.APIReqresTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -109,7 +186,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testCreateLog" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testCreateUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -119,7 +196,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testCreateLog" />
+      <option name="METHOD_NAME" value="testCreateUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -127,7 +204,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testGetSingleUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testRequestSDelayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -137,7 +214,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testGetSingleUser" />
+      <option name="METHOD_NAME" value="testRequestSDelayed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,7 +222,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestListOfResources" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testUnsuccessfulRegister" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +232,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestListOfResources" />
+      <option name="METHOD_NAME" value="testUnsuccessfulRegister" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -163,7 +240,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestSingleUserNotFound" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebSampleTest.testModelSpecs" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -172,8 +249,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestSingleUserNotFound" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.WebSampleTest" />
+      <option name="METHOD_NAME" value="testModelSpecs" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -183,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.APIReqresTest.testRequestListOfResources" />
         <item itemvalue="TestNG.APIReqresTest" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUserNotFound" />
-        <item itemvalue="TestNG.APIReqresTest.testGetSingleUser" />
-        <item itemvalue="TestNG.APIReqresTest.testCreateLog" />
+        <item itemvalue="TestNG.APIReqresTest.testUnsuccessfulRegister" />
+        <item itemvalue="TestNG.APIReqresTest.testCreateUser" />
+        <item itemvalue="TestNG.WebSampleTest.testModelSpecs" />
+        <item itemvalue="TestNG.APIReqresTest.testRequestSDelayed" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689909305774</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add methods">
+      <created>1689910001785</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689910001785</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +350,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add git.ignore" />
     <MESSAGE value="add negative methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="add negative methods" />
+    <MESSAGE value="add methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="add methods" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

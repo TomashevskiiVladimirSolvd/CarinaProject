@@ -10,13 +10,13 @@ import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
 @Endpoint(url = "${base_url}/api/register", methodType = HttpMethodType.POST)
-@RequestTemplatePath(path = "api/reqres/_post/rq.json")
-@ResponseTemplatePath(path = "api/reqres/_post/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class PostReqresMethod extends AbstractApiMethodV2 {
+@RequestTemplatePath(path = "api/reqres/_post/rqcreate.json")
+@ResponseTemplatePath(path = "api/reqres/_post/rscreate.json")
+@SuccessfulHttpStatus(status = HttpResponseStatusType.BAD_REQUEST_400)
 
-    public PostReqresMethod() {
-        super("api/reqres/_post/rq.json", "api/reqres/_post/rs.json");
+public class PostRegisterUnsuccessful extends AbstractApiMethodV2{
+    public PostRegisterUnsuccessful() {
+        super("api/reqres/_post/rqcreate.json", "api/reqres/_post/rscreate.json");
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
     }
 }
