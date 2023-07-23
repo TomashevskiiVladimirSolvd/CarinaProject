@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 
 import com.solvd.qa.carina.demo.gui.components.footer.FooterMenu;
 import com.solvd.qa.carina.demo.gui.pages.common.AllBrandsPageBase;
-import com.solvd.qa.carina.demo.gui.pages.common.BrandModelsPageBase;
 import com.solvd.qa.carina.demo.gui.pages.common.CompareModelsPageBase;
 import com.solvd.qa.carina.demo.gui.pages.common.HomePageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;

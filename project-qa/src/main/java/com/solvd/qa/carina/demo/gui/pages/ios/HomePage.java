@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 import com.solvd.qa.carina.demo.gui.components.footer.MobileFooterMenu;
 import com.solvd.qa.carina.demo.gui.pages.common.AllBrandsPageBase;
-import com.solvd.qa.carina.demo.gui.pages.common.BrandModelsPageBase;
 import com.solvd.qa.carina.demo.gui.pages.common.CompareModelsPageBase;
 import com.solvd.qa.carina.demo.gui.pages.common.HomePageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
