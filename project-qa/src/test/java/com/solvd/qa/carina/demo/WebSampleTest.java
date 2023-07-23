@@ -8,8 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.solvd.qa.carina.demo.gui.components.ModelItem;
-import com.solvd.qa.carina.demo.gui.components.NewsItem;
 import com.solvd.qa.carina.demo.gui.components.compare.ModelSpecs;
 import com.solvd.qa.carina.demo.gui.components.compare.ModelSpecs.SpecType;
 import com.solvd.qa.carina.demo.gui.pages.common.AllBrandsPageBase;

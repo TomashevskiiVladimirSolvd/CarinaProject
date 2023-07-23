@@ -1,8 +1,8 @@
 package com.solvd.qa.carina.demo;
 
 import java.lang.invoke.MethodHandles;
-
 import com.solvd.qa.carina.demo.api.*;
+import io.restassured.response.Response;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +12,9 @@ import org.testng.annotations.Test;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
+import com.jayway.jsonpath.JsonPath;
+import org.testng.Assert;
+
 
 
 public class APIReqresTest implements IAbstractTest {
@@ -22,18 +25,25 @@ public class APIReqresTest implements IAbstractTest {
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestListOfUsers() {
         GetUsers api = new GetUsers();
-        api.callAPIExpectSuccess();
         LOGGER.info("List of Users is created.");
+        Response response =api.callAPIExpectSuccess();
+        int actualPageNumber = response.jsonPath().getInt("page");
+        int expectedPageNumber = 1;
+        Assert.assertEquals(actualPageNumber,expectedPageNumber,"Page number is not valid");
         api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         api.validateResponseAgainstSchema("api/reqres/_get/rs.schema");
+
     }
 
     @Test()
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestSingleUser() {
         GetUser api = new GetUser();
-        api.callAPIExpectSuccess();
         LOGGER.info("Single User is created.");
+        Response response =api.callAPIExpectSuccess();
+        String actualEmail = response.jsonPath().getString("data.email");
+        String expectedEmail = "janet.weaver@reqres.in";
+        Assert.assertEquals(actualEmail,expectedEmail,"Email is not valid");
         api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         api.validateResponseAgainstSchema("api/reqres/_get/rssingle.schema");
     }
@@ -42,8 +52,11 @@ public class APIReqresTest implements IAbstractTest {
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestListOfResources() {
         GetResources api = new GetResources();
-        api.callAPIExpectSuccess();
         LOGGER.info("List of Resources is created.");
+        Response response =api.callAPIExpectSuccess();
+        int actualTotal = response.jsonPath().getInt("total");
+        int expectedTotal =12;
+        Assert.assertEquals(actualTotal,expectedTotal,"Total is not valid.");
         api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         api.validateResponseAgainstSchema("api/reqres/_get/rsresources.schema");
     }
@@ -52,7 +65,10 @@ public class APIReqresTest implements IAbstractTest {
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestSingleResource() {
         GetResource api = new GetResource();
-        api.callAPIExpectSuccess();
+        Response response =api.callAPIExpectSuccess();
+        String actualColor = response.jsonPath().getString("data.color");
+        String expectedColor = "#C74375";
+        Assert.assertEquals(actualColor,expectedColor,"Color is not valid");
         LOGGER.info("Single Resource is created.");
         api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         api.validateResponseAgainstSchema("api/reqres/_get/rsresource.schema");
@@ -62,7 +78,10 @@ public class APIReqresTest implements IAbstractTest {
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestSDelayed() {
         GetDelayed api = new GetDelayed();
-        api.callAPIExpectSuccess();
+        Response response =api.callAPIExpectSuccess();
+        int actualTotalPages = response.jsonPath().getInt("total_pages");
+        int expectedTotalPages=2;
+        Assert.assertEquals(actualTotalPages,expectedTotalPages,"total_pages is not valid");
         LOGGER.info("Delayed is created.");
         api.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         api.validateResponseAgainstSchema("api/reqres/_get/rsdelay.schema");

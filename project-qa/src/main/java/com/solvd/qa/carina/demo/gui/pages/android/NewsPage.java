@@ -5,7 +5,6 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import com.solvd.qa.carina.demo.gui.components.NewsItem;
 import com.solvd.qa.carina.demo.gui.pages.common.NewsPageBase;
 import com.zebrunner.carina.webdriver.locator.Context;
 import com.zebrunner.carina.utils.factory.DeviceType;

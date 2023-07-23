@@ -5,7 +5,6 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import com.solvd.qa.carina.demo.gui.components.ModelItem;
 import com.solvd.qa.carina.demo.gui.pages.common.BrandModelsPageBase;
 import com.solvd.qa.carina.demo.gui.pages.common.ModelInfoPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;

@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
-import com.solvd.qa.carina.demo.gui.components.ModelItem;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
 public abstract class BrandModelsPageBase extends AbstractPage {

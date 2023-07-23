@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
-import com.solvd.qa.carina.demo.gui.components.NewsItem;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
 public abstract class NewsPageBase extends AbstractPage {
