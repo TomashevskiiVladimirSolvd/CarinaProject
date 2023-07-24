@@ -39,6 +39,8 @@ public class AmazonWebTest implements IAbstractTest {
         HomePageAmazon homePageAmazon = new HomePageAmazon(getDriver());
         homePageAmazon.open();
         homePageAmazon.hoverAccountListSigninButton();
+        SignInPage signInPage= homePageAmazon.clickOnSignInButton();
+        signInPage.clickAndInputWrongEmail("tomalli1234@mail.ru");
     }
 
 
