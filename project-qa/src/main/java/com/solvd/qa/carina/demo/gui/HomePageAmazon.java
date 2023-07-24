@@ -2,7 +2,6 @@ package com.solvd.qa.carina.demo.gui;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -22,14 +21,49 @@ public class HomePageAmazon extends AbstractUIObject {
     @FindBy(xpath = "//a[@id='nav-link-accountList']")
     private ExtendedWebElement signinButton;
 
+   @FindBy(xpath = "//a[@class='nav-a nav-a-2   nav-progressive-attribute']")
+    private ExtendedWebElement accountListSigninButton;
+
+   @FindBy(xpath ="//div[@id='nav-al-your-account']/a[1]/span")
+   private ExtendedWebElement accountLink;
+
+    @FindBy(xpath = "//div[@id='nav-flyout-ya-signin']/a/span[contains(.,'Sign')]")
+    private ExtendedWebElement signInButton;
 
 
     public HomePageAmazon(WebDriver driver){
         super(driver);
     }
 
-    public CartPage clickOnCartButton(){
+    public AddedToCartPage clickOnCartButton(){
         cartButton.click();
-        return new CartPage(driver);
+        return new AddedToCartPage(driver);
     }
+
+    public boolean isPageOpened() {
+        return logo.isElementPresent();
+    }
+
+    public DumbbellsPageAmazon searhDumbells(){
+        searchTextBox.click();
+        searchTextBox.type("dumbbells");
+        searhButton.click();
+        return new DumbbellsPageAmazon(driver);
+    }
+
+    public void hoverAccountListSigninButton(){
+        accountListSigninButton.hover();
+    }
+
+    public AccountPage clickOnAccountLink(){
+        accountLink.click();
+        return new AccountPage(driver);
+    }
+
+    public SignInPage clickOnSignInButton(){
+        signinButton.click();
+        return new SignInPage(driver);
+    }
+
+
 }

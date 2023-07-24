@@ -10,8 +10,16 @@ public class BasicsNeoprenDubbellPage extends AbstractUIObject {
     @FindBy (xpath = "//span[@id='productTitle']")
     private ExtendedWebElement dumbellTitle;
 
+    @FindBy(xpath = "//input[@id='add-to-cart-button']")
+    private ExtendedWebElement addToCartButton;
+
     BasicsNeoprenDubbellPage(WebDriver driver){
         super(driver);
+    }
+
+    public AddedToCartPage addItemToCart(){
+        addToCartButton.click();
+        return new AddedToCartPage(driver);
     }
 
 

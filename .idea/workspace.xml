@@ -5,26 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AddedToCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/SignInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/ModelItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/NewsItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/WeValuePrivacyAd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/BrandModelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/BrandModelsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/BrandModelsPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/BrandModelsPageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/NewsPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/NewsPageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/BrandModelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/BrandModelsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/BrandModelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/BrandModelsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebMultipleBrowserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/WebMultipleBrowserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/BasicsNeoprenDubbellPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/BasicsNeoprenDubbellPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/ModelItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/NewsItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/WeValuePrivacyAd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/footer/FooterMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/footer/FooterMenuBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/footer/MobileFooterMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/AllBrandsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/BrandModelsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/NewsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/AllBrandsPageBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/BrandModelsPageBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/NewsPageBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/AllBrandsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/BrandModelsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/NewsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/AllBrandsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/BrandModelsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/NewsPage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +84,7 @@
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APIReqresTest.testRequestSDelayed">
+  <component name="RunManager" selected="TestNG.AmazonWebTest.testAddingItemToTheCart">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -177,7 +187,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestSingleUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AmazonWebTest.testAddingItemToTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -186,8 +196,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestSingleUser" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.AmazonWebTest" />
+      <option name="METHOD_NAME" value="testAddingItemToTheCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -197,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AmazonWebTest.testAddingItemToTheCart" />
         <item itemvalue="TestNG.APIReqresTest.testRequestSDelayed" />
         <item itemvalue="TestNG.APIReqresTest.testRequestSingleResource" />
         <item itemvalue="TestNG.APIReqresTest.testRequestListOfResources" />
         <item itemvalue="TestNG.APIReqresTest.testRequestListOfUsers" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUser" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690042115163</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add changes">
+      <created>1690079449371</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690079449372</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add changes">
+      <created>1690085119598</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690085119598</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,16 +321,5 @@
     <MESSAGE value="add methods" />
     <MESSAGE value="add changes" />
     <option name="LAST_COMMIT_MESSAGE" value="add changes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
