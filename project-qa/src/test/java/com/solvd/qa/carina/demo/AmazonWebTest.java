@@ -48,5 +48,12 @@ public class AmazonWebTest implements IAbstractTest {
                 "Error text in not found.");
     }
 
+    public void testAmazonBestSellers(){
+        HomePageAmazon homePageAmazon = new HomePageAmazon(getDriver());
+        homePageAmazon.open();
+        homePageAmazon.clickOnAllMenuButton();
+    }
+
+
 
 }

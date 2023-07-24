@@ -30,6 +30,9 @@ public class HomePageAmazon extends AbstractUIObject {
     @FindBy(xpath = "//div[@id='nav-flyout-ya-signin']/a/span[contains(.,'Sign')]")
     private ExtendedWebElement signInButton;
 
+    @FindBy(xpath = "//a[@id='nav-hamburger-menu']")
+    private ExtendedWebElement allMenuButton;
+
 
     public HomePageAmazon(WebDriver driver){
         super(driver);
@@ -63,6 +66,10 @@ public class HomePageAmazon extends AbstractUIObject {
     public SignInPage clickOnSignInButton(){
         signinButton.click();
         return new SignInPage(driver);
+    }
+
+    public void clickOnAllMenuButton(){
+        allMenuButton.click();
     }
 
 
