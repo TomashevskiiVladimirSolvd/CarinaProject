@@ -4,7 +4,6 @@ import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-import com.solvd.qa.carina.demo.gui.pages.common.HomePageBase;
 import com.zebrunner.carina.utils.factory.ICustomTypePageFactory;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 

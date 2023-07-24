@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 import com.solvd.qa.carina.demo.gui.pages.desktop.CompareModelsPage;
-import com.solvd.qa.carina.demo.gui.pages.desktop.HomePage;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 
 public class FooterMenu extends FooterMenuBase {

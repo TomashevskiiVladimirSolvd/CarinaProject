@@ -2,7 +2,6 @@ package com.solvd.qa.carina.demo.regression.esg;
 
 import com.github.kklisura.cdt.services.ChromeDevToolsService;
 import com.zebrunner.carina.core.IAbstractTest;
-import com.solvd.qa.carina.demo.gui.pages.common.HomePageBase;
 import com.zebrunner.carina.webdriver.DriverHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -32,7 +32,8 @@ public class AmazonWebTest implements IAbstractTest {
         homePageAmazon.hoverAccountListSigninButton();
         AccountPage accountPage=homePageAmazon.clickOnAccountLink();
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(accountPage.getAccountTitle(),"Your Account","You are not on the AccountPage");
+        softAssert.assertEquals(accountPage.getAccountTitle(),"Your Account",
+                "You are not on the AccountPage");
     }
 
     public void testNegativeSignIn(){
@@ -41,6 +42,10 @@ public class AmazonWebTest implements IAbstractTest {
         homePageAmazon.hoverAccountListSigninButton();
         SignInPage signInPage= homePageAmazon.clickOnSignInButton();
         signInPage.clickAndInputWrongEmail("tomalli1234@mail.ru");
+        signInPage.clickOnContinueButton();
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(signInPage.getErrorText(),"There was a problem",
+                "Error text in not found.");
     }
 
 

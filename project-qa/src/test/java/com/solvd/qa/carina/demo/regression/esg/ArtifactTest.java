@@ -1,7 +1,6 @@
 package com.solvd.qa.carina.demo.regression.esg;
 
 import com.zebrunner.carina.core.IAbstractTest;
-import com.solvd.qa.carina.demo.gui.pages.common.HomePageBase;
 import com.solvd.qa.carina.demo.utils.ArtifactUtils;
 import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.utils.report.SessionContext;

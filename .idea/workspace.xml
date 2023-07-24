@@ -5,36 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AddedToCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/SignInPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/BasicsNeoprenDubbellPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/BasicsNeoprenDubbellPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/ModelItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/NewsItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/WeValuePrivacyAd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/footer/FooterMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/footer/FooterMenuBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/footer/MobileFooterMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/AllBrandsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/BrandModelsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/NewsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/AllBrandsPageBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/BrandModelsPageBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/NewsPageBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/AllBrandsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/BrandModelsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/NewsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/AllBrandsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/BrandModelsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/NewsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/footer/FooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/footer/FooterMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/footer/FooterMenuBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/footer/FooterMenuBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/footer/MobileFooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/components/footer/MobileFooterMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/AllBrandsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/AllBrandsPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AllBrandsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/AllBrandsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/AllBrandsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/DataProvidersSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/ArtifactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/ArtifactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/ClipboardTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/DevToolsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/DevToolsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/ProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/VNCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/esg/VNCTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +292,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690085119598</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add changes">
+      <created>1690166404896</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690166404896</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add changes">
+      <created>1690168827822</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690168827822</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

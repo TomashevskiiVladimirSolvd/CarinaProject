@@ -2,7 +2,6 @@ package com.solvd.qa.carina.demo.regression.esg;
 
 import com.zebrunner.agent.core.registrar.Artifact;
 import com.zebrunner.carina.core.IAbstractTest;
-import com.solvd.qa.carina.demo.gui.pages.desktop.HomePage;
 import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.utils.report.SessionContext;
 import com.zebrunner.carina.webdriver.Screenshot;
