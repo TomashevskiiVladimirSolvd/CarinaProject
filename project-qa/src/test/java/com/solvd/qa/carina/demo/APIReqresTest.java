@@ -36,6 +36,7 @@ public class APIReqresTest implements IAbstractTest {
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestSingleUser() {
         GetUser api = new GetUser();
+        api.setProperties("user.properties");
         LOGGER.info("Single User is created.");
         Response response =api.callAPIExpectSuccess();
         String actualEmail = response.jsonPath().getString("data.email");

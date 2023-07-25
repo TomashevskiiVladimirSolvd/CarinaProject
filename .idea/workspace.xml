@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/resources/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rssingle.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rssingle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/user.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +55,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project-qa/src/main/resources" />
       <recent name="$PROJECT_DIR$/project-qa" />
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar" />
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APIReqresTest">
+  <component name="RunManager" selected="TestNG.APIReqresTest.testRequestSingleUser">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -103,6 +109,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="APIReqresTest.testRequestListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
+      <option name="METHOD_NAME" value="testRequestListOfUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="APIReqresTest.testRequestResourseNotFound" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
@@ -121,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestSDelayed" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APIReqresTest.testRequestSingleUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -131,25 +155,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestSDelayed" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="APIReqresTest.testRequestSingleResource" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="project-qa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestSingleResource" />
+      <option name="METHOD_NAME" value="testRequestSingleUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -177,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUser" />
         <item itemvalue="TestNG.APIReqresTest" />
+        <item itemvalue="TestNG.APIReqresTest.testRequestListOfUsers" />
         <item itemvalue="TestNG.APIReqresTest.testRequestUserNotFound" />
         <item itemvalue="TestNG.APIReqresTest.testRequestResourseNotFound" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestSDelayed" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestSingleResource" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690254793801</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add changes">
+      <created>1690255198893</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690255198893</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
