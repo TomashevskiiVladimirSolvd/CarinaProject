@@ -9,7 +9,7 @@ import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
 @Endpoint(url = "${base_url}/api/${api_user}/${api_id}", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "api/reqres/_get/rssingle.json")
+@ResponseTemplatePath(path = "api/reqres/_get/rsFreemarker.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetUser extends AbstractApiMethodV2 {
 

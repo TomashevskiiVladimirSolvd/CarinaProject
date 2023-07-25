@@ -61,7 +61,7 @@
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APIReqresTest.testRequestSingleUser">
+  <component name="RunManager" selected="TestNG.APIReqresTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -183,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUser" />
         <item itemvalue="TestNG.APIReqresTest" />
+        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUser" />
         <item itemvalue="TestNG.APIReqresTest.testRequestListOfUsers" />
         <item itemvalue="TestNG.APIReqresTest.testRequestUserNotFound" />
         <item itemvalue="TestNG.APIReqresTest.testRequestResourseNotFound" />
