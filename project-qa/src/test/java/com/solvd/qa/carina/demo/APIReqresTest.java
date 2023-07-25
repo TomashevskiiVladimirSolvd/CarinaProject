@@ -6,15 +6,11 @@ import io.restassured.response.Response;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
-import com.jayway.jsonpath.JsonPath;
 import org.testng.Assert;
-
 
 
 public class APIReqresTest implements IAbstractTest {
@@ -108,7 +104,7 @@ public class APIReqresTest implements IAbstractTest {
     @Test()
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestUserNotFound() {
-        GetUserNotFound api = new GetUserNotFound();
+        GetUserNotFound api = new GetUserNotFound("999");
         api.callAPIExpectSuccess();
         LOGGER.info("User not found.");
         api.validateResponse();
@@ -117,7 +113,7 @@ public class APIReqresTest implements IAbstractTest {
     @Test()
     @MethodOwner(owner = "vtomashevskii")
     public void testRequestResourseNotFound() {
-        GetResourceNotFound api = new GetResourceNotFound();
+        GetResourceNotFound api = new GetResourceNotFound("1000");
         api.callAPIExpectSuccess();
         LOGGER.info("Resource not found.");
         api.validateResponse();
@@ -133,13 +129,4 @@ public class APIReqresTest implements IAbstractTest {
         api.validateResponse();
     }
 
-
-    @DataProvider(name = "DP1")
-    public Object[][] dataprovider() {
-        return new Object[][]{
-                { 1},
-                { 2},
-                { 3}
-        };
-    }
 }

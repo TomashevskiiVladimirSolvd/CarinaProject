@@ -9,7 +9,7 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/api/register", methodType = HttpMethodType.POST)
+@Endpoint(url = "${base_url}/api/${api_register}", methodType = HttpMethodType.POST)
 @RequestTemplatePath(path = "api/reqres/_post/rq.json")
 @ResponseTemplatePath(path = "api/reqres/_post/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
@@ -18,5 +18,6 @@ public class PostRegister extends AbstractApiMethodV2 {
     public PostRegister() {
         super("api/reqres/_post/rq.json", "api/reqres/_post/rs.json");
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
+        replaceUrlPlaceholder("api_register",Configuration.getRequired("api_register"));
     }
 }

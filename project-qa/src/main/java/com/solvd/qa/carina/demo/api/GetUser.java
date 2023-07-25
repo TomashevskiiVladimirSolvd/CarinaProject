@@ -8,12 +8,14 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/api/users/2", methodType = HttpMethodType.GET)
+@Endpoint(url = "${base_url}/api/${api_user}/${api_id}", methodType = HttpMethodType.GET)
 @ResponseTemplatePath(path = "api/reqres/_get/rssingle.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetUser extends AbstractApiMethodV2 {
 
     public GetUser() {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
+        replaceUrlPlaceholder("api_user",Configuration.getRequired("api_user"));
+        replaceUrlPlaceholder("api_id",Configuration.getRequired("api_id"));
     }
 }
