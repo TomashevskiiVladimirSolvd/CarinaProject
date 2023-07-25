@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
@@ -101,19 +102,19 @@ public class APIReqresTest implements IAbstractTest {
         api.validateResponse();
     }
 
-    @Test()
+    @Test(dataProvider = "badIds")
     @MethodOwner(owner = "vtomashevskii")
-    public void testRequestUserNotFound() {
-        GetUserNotFound api = new GetUserNotFound("999");
+    public void testRequestUserNotFound(String badId) {
+        GetUserNotFound api = new GetUserNotFound(badId);
         api.callAPIExpectSuccess();
         LOGGER.info("User not found.");
         api.validateResponse();
     }
 
-    @Test()
+    @Test(dataProvider = "badIds")
     @MethodOwner(owner = "vtomashevskii")
-    public void testRequestResourseNotFound() {
-        GetResourceNotFound api = new GetResourceNotFound("1000");
+    public void testRequestResourseNotFound(String badId) {
+        GetResourceNotFound api = new GetResourceNotFound(badId);
         api.callAPIExpectSuccess();
         LOGGER.info("Resource not found.");
         api.validateResponse();
@@ -127,6 +128,14 @@ public class APIReqresTest implements IAbstractTest {
         api.callAPIExpectSuccess();
         LOGGER.info("Password is missed");
         api.validateResponse();
+    }
+
+    @DataProvider(name = "badIds")
+    public static Object[][] badIds() {
+        return new Object[][]{
+                {"999"}, {"1000"}, {"1001"}
+
+        };
     }
 
 }
