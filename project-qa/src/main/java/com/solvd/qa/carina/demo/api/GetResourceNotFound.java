@@ -7,7 +7,6 @@ import com.zebrunner.carina.api.annotation.SuccessfulHttpStatus;
 import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
-import org.testng.annotations.DataProvider;
 
 @Endpoint(url = "${base_url}/api/${api_resource}/${api_bid}", methodType = HttpMethodType.GET)
 @ResponseTemplatePath(path = "api/reqres/_get/rsresourcenotfound.json")
@@ -19,12 +18,5 @@ public class GetResourceNotFound extends AbstractApiMethodV2 {
         replaceUrlPlaceholder("api_resource",Configuration.getRequired("api_resource"));
         replaceUrlPlaceholder("api_bid",badId);
 
-    }
-
-    @DataProvider(name = "data")
-    public Object[][] data() {
-        return new Object[][]{
-                { 1}, { 2}, { 3}
-        };
     }
 }

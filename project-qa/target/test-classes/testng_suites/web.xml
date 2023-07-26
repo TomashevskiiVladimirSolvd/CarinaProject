@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite verbose="1" name="Carina Demo Tests - Web Sample" parallel="methods">
 
-	<parameter name="suiteOwner" value="qpsdemo"/>
+	<parameter name="suiteOwner" value="v.tomashevskii"/>
 	<parameter name="jenkinsJobName" value="Web-Demo-Test"/>
 	<parameter name="jenkinsJobType" value="web"/>
 	<parameter name="jenkinsEnvironments" value="DEMO"/>
@@ -16,7 +16,7 @@
 
 	<test name="GSM arena web tests">
 		<classes>
-			<class name="com.solvd.qa.carina.demo.WebSampleTest" />
+			<class name="com.solvd.qa.carina.demo.AmazonWebTest" />
 		</classes>
 	</test>
 

@@ -1,9 +1,9 @@
 {
   "data": {
     "id": "skip",
-    "email": "${email}",
-    "first_name": "skip",
-    "last_name": "skip",
+    <#if email??>"email": "${email}",</#if>
+    <#if first_name??>"first_name": "${first_name}",</#if>
+    <#if last_name??>"last_name": "${last_name}",</#if>
     "avatar": "skip"
   },
   "support": {

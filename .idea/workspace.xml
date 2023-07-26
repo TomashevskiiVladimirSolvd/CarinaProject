@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/resources/user.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/TestDataProviders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/user.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rssingle.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rssingle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/user.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsFreemarker.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsFreemarker.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestListOfUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AmazonWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -118,8 +127,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestListOfUsers" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.AmazonWebTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmazonWebTest.testAddingItemToTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.AmazonWebTest" />
+      <option name="METHOD_NAME" value="testAddingItemToTheCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -127,54 +153,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestResourseNotFound" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/api.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestResourseNotFound" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest.testRequestSingleUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/web.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestSingleUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="APIReqresTest.testRequestUserNotFound" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="project-qa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
-      <option name="METHOD_NAME" value="testRequestUserNotFound" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -184,10 +176,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.APIReqresTest" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestSingleUser" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestListOfUsers" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestUserNotFound" />
-        <item itemvalue="TestNG.APIReqresTest.testRequestResourseNotFound" />
+        <item itemvalue="TestNG.AmazonWebTest.testAddingItemToTheCart" />
+        <item itemvalue="TestNG.AmazonWebTest" />
+        <item itemvalue="TestNG./Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/api.xml" />
+        <item itemvalue="TestNG./Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/web.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690255198893</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add changes">
+      <created>1690258384296</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690258384296</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add changes">
+      <created>1690258558614</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690258558614</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

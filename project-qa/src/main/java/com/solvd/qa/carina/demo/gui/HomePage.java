@@ -2,10 +2,11 @@ package com.solvd.qa.carina.demo.gui;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePageAmazon extends AbstractUIObject {
+public class HomePage extends AbstractUIObject {
     @FindBy(xpath = "//a[@id='nav-cart']")
     private ExtendedWebElement cartButton;
 
@@ -34,7 +35,7 @@ public class HomePageAmazon extends AbstractUIObject {
     private ExtendedWebElement allMenuButton;
 
 
-    public HomePageAmazon(WebDriver driver){
+    public HomePage(WebDriver driver){
         super(driver);
     }
 
@@ -71,6 +72,5 @@ public class HomePageAmazon extends AbstractUIObject {
     public void clickOnAllMenuButton(){
         allMenuButton.click();
     }
-
 
 }
