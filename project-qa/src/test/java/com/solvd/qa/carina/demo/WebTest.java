@@ -60,4 +60,11 @@ public class WebTest implements IAbstractTest {
         softAssert.assertAll();
     }
 
+    public void testCreateAccountWithWrongEmail(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        homePage.hoverAccountListSigninButton();
+        homePage.
+    }
+
 }

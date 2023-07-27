@@ -38,6 +38,9 @@ public class HomePage extends HomePageCommon {
     @FindBy(xpath = "//div[@id='hmenu-content']/descendant::a[1]")
     private ExtendedWebElement bestSellerLink;
 
+    @FindBy(xpath="//div[@id='nav-flyout-ya-newCust']/a")
+    private ExtendedWebElement startNewCustomerLink;
+
 
     public HomePage(WebDriver driver){
         super(driver);
