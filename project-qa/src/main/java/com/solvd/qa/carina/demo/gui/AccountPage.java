@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountPage extends AbstractUIObject {
 
-    @FindBy(xpath = "//div[@class=\'a-row a-spacing-base\']/h1")
+    @FindBy(xpath = "//div[@id='a-page']/descendant::h1")
     private ExtendedWebElement yourAccoutTitle;
 
     public AccountPage(WebDriver driver){

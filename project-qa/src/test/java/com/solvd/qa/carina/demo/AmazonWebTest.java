@@ -16,7 +16,7 @@ public class AmazonWebTest implements IAbstractTest {
         homePage.open();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(homePage.isPageOpened(),"Amazon Home page is not opened");
-        DumbbellsPageAmazon dumbbellsPageAmazon= homePage.searhDumbells();
+        DumbbellsPageAmazon dumbbellsPageAmazon= homePage.searhItem("dumbbells");
         BasicsNeoprenDubbellPage basicsNeoprenDubbellPage=dumbbellsPageAmazon.clickOnPinkDumbells();
         AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
         CartPage cartPage = addedToCartPage.goToCartButton();
@@ -43,7 +43,7 @@ public class AmazonWebTest implements IAbstractTest {
         homePage.open();
         homePage.hoverAccountListSigninButton();
         SignInPage signInPage= homePage.clickOnSignInButton();
-        signInPage.clickAndInputWrongEmail("tomalli1234@mail.ru");
+        signInPage.clickAndInputEmail("tomalli1234@mail.ru");
         signInPage.clickOnContinueButton();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(signInPage.getErrorText(),"There was a problem",

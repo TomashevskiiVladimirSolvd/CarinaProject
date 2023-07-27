@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends AbstractUIObject {
 
-    @FindBy (xpath = "//span[contains(text(),'Neoprene Dumbbell')][2]")
+    @FindBy (xpath = "//form[@id='activeCartViewForm']/descendant::span[@class='a-truncate-cut']")
     private ExtendedWebElement dumbbellsInCartText;
 
-    @FindBy(xpath =  "//h1[contains(.,'empty')]")
+    @FindBy(xpath =  "///div[@id='sc-active-cart']/descendant::h1")
     private ExtendedWebElement cartEmptyText;
 
     @FindBy(xpath = "//span[@data-action='delete']")

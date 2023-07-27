@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddedToCartPage extends AbstractUIObject {
 
-    @FindBy(xpath = "//span[contains(@id,'sw-gtc')]//a[contains(.,'Go to Cart')]")
+    @FindBy(xpath = "//span[@id='sw-gtc']/descendant::a")
     private  ExtendedWebElement goToCartButton;
 
     public AddedToCartPage(WebDriver driver){

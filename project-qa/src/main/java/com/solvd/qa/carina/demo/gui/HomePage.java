@@ -25,10 +25,10 @@ public class HomePage extends AbstractUIObject {
    @FindBy(xpath = "//a[@class='nav-a nav-a-2   nav-progressive-attribute']")
     private ExtendedWebElement accountListSigninButton;
 
-   @FindBy(xpath ="//div[@id='nav-al-your-account']/a[1]/span")
+   @FindBy(xpath ="//div[@id='nav-al-your-account']/descendant::span[1]")
    private ExtendedWebElement accountLink;
 
-    @FindBy(xpath = "//div[@id='nav-flyout-ya-signin']/a/span[contains(.,'Sign')]")
+    @FindBy(xpath = "//div[@id='nav-flyout-ya-signin']//descendant::span")
     private ExtendedWebElement signInButton;
 
     @FindBy(xpath = "//a[@id='nav-hamburger-menu']")
@@ -48,9 +48,9 @@ public class HomePage extends AbstractUIObject {
         return logo.isElementPresent();
     }
 
-    public DumbbellsPageAmazon searhDumbells(){
+    public DumbbellsPageAmazon searhItem(String item){
         searchTextBox.click();
-        searchTextBox.type("dumbbells");
+        searchTextBox.type(item);
         searhButton.click();
         return new DumbbellsPageAmazon(driver);
     }

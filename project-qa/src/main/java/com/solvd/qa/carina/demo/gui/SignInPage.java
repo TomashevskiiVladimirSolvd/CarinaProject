@@ -13,7 +13,7 @@ public class SignInPage extends AbstractUIObject {
     @FindBy(xpath="//input[@id='continue']")
     private ExtendedWebElement continueButton;
 
-    @FindBy(xpath = "//h4[contains(.,'There was a problem')]")
+    @FindBy(xpath = "//div[@id='auth-error-message-box']/descendant::h4")
     private ExtendedWebElement errorText;
 
     public SignInPage(WebDriver driver){
@@ -24,7 +24,7 @@ public class SignInPage extends AbstractUIObject {
        return errorText.getText();
     }
 
-    public void clickAndInputWrongEmail(String wrongEmail){
+    public void clickAndInputEmail(String wrongEmail){
         emailTextBox.click();
         emailTextBox.setName(wrongEmail);
     }
