@@ -16,7 +16,7 @@
 
 	<test name="GSM arena web tests">
 		<classes>
-			<class name="com.solvd.qa.carina.demo.AmazonWebTest" />
+			<class name="com.solvd.qa.carina.demo.WebTest" />
 		</classes>
 	</test>
 

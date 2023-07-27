@@ -16,7 +16,7 @@
 
 	<test name="API tests" parallel="methods">
 		<classes>
-			<class name="com.solvd.qa.carina.demo.APIReqresTest">
+			<class name="com.solvd.qa.carina.demo.APITest">
 				<methods>
 					<include name="testRequestListOfUsers"/>
 					<include name="testRequestSingleUser"/>

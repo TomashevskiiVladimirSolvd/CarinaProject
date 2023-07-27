@@ -13,7 +13,7 @@ import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import org.testng.Assert;
 
 
-public class APIReqresTest implements IAbstractTest {
+public class APITest implements IAbstractTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 

@@ -5,32 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/AccountPageCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/AddedToCartPageCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/BasicsNeoprenDubbellPageCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageCommon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/AddedToCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/BasicsNeoprenDubbellPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/DumbbellsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/SignInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AccountPageDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AddedToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AddedToCartPageDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/BasicsNeoprenDubbellPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/BasicsNeoprenDubbellPageDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CartPageDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/DumbbellsPageAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/DumbbellsPageAmazonDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePageDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/SignInPageDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/CompareModelsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/ModelInfoPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/CompareModelsPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/ModelInfoPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AttachFilePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CompareModelsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/ModelInfoPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/WikipediaHomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/WikipediaLocalePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/CompareModelsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/ModelInfoPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/attachfile/AttachFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/attachfile/AttachFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AccountPageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AddedToCartPageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AddedToCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/BasicsNeoprenDubbellPageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/BasicsNeoprenDubbellPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CartPageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/DumbbellsPageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/DumbbellsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/SignInPageDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/attachfile/AttachFileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/amazon.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/android-dragAndDrop.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/android.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/autodownload.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/dataprovider.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/ios-preferences.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/ios-safari.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/ios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/ios.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/attachFile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/dataprovider-multiply-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/dataprovider-retry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/esg-artifact.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/esg-clipboard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/esg-devtools.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/esg-proxy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/esg-vnc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/regression/xls-dataprovider-retry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web-localization.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web-multiple-browser.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web-open-strategy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web-single-driver.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +96,7 @@
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.APIReqresTest">
+  <component name="RunManager" selected="TestNG.APITest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -112,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="APIReqresTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="APITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +136,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APIReqresTest" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.APITest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -129,7 +144,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazonWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +153,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.AmazonWebTest" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.WebTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -146,7 +161,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmazonWebTest.testAddingItemToTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTest.testAddingItemToTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +170,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.AmazonWebTest" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.WebTest" />
       <option name="METHOD_NAME" value="testAddingItemToTheCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -186,7 +201,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.APIReqresTest" />
+        <item itemvalue="TestNG.APITest" />
         <item itemvalue="TestNG.AmazonWebTest.testAddingItemToTheCart" />
         <item itemvalue="TestNG.AmazonWebTest" />
         <item itemvalue="TestNG./Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/api.xml" />
@@ -350,7 +365,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690422566912</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add changes">
+      <created>1690424128930</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1690424128930</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add changes">
+      <created>1690424633044</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690424633044</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

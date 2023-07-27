@@ -7,17 +7,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = DumbbellsPageCommon.class)
-public class DumbbellsPageDesktop extends DumbbellsPageCommon {
+public class DumbbellsPage extends DumbbellsPageCommon {
 
     @FindBy(xpath = "//div[@data-component-id='2']")
     private ExtendedWebElement smallPinkDumbells;
 
-    public DumbbellsPageDesktop(WebDriver driver){
+    public DumbbellsPage(WebDriver driver){
         super(driver);
     }
 
-    public BasicsNeoprenDubbellPageDesktop clickOnPinkDumbells(){
+    public BasicsNeoprenDubbellPage clickOnPinkDumbells(){
         smallPinkDumbells.click();
-        return new BasicsNeoprenDubbellPageDesktop(driver);
+        return new BasicsNeoprenDubbellPage(driver);
     }
 }

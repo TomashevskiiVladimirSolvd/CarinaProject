@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = SignInPageCommon.class)
-public class SignInPageDesktop extends SignInPageCommon {
+public class SignInPage extends SignInPageCommon {
 
     @FindBy(xpath = "//input[@id='ap_email']")
     private ExtendedWebElement emailTextBox;
@@ -18,7 +18,7 @@ public class SignInPageDesktop extends SignInPageCommon {
     @FindBy(xpath = "//div[@id='auth-error-message-box']/descendant::h4")
     private ExtendedWebElement errorText;
 
-    public SignInPageDesktop(WebDriver driver){
+    public SignInPage(WebDriver driver){
         super(driver);
     }
 

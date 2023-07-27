@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = HomePageCommon.class)
-public class HomePageDesktop extends HomePageCommon {
+public class HomePage extends HomePageCommon {
     @FindBy(xpath = "//a[@id='nav-cart']")
     private ExtendedWebElement cartButton;
 
@@ -36,38 +36,38 @@ public class HomePageDesktop extends HomePageCommon {
     private ExtendedWebElement allMenuButton;
 
 
-    public HomePageDesktop(WebDriver driver){
+    public HomePage(WebDriver driver){
         super(driver);
     }
 
-    public AddedToCartPageDesktop clickOnCartButton(){
+    public AddedToCartPage clickOnCartButton(){
         cartButton.click();
-        return new AddedToCartPageDesktop(driver);
+        return new AddedToCartPage(driver);
     }
 
     public boolean isPageOpened() {
         return logo.isElementPresent();
     }
 
-    public DumbbellsPageDesktop searhItem(String item){
+    public DumbbellsPage searhItem(String item){
         searchTextBox.click();
         searchTextBox.type(item);
         searhButton.click();
-        return new DumbbellsPageDesktop(driver);
+        return new DumbbellsPage(driver);
     }
 
     public void hoverAccountListSigninButton(){
         accountListSigninButton.hover();
     }
 
-    public AccountPageDesktop clickOnAccountLink(){
+    public AccountPage clickOnAccountLink(){
         accountLink.click();
-        return new AccountPageDesktop(driver);
+        return new AccountPage(driver);
     }
 
-    public SignInPageDesktop clickOnSignInButton(){
+    public SignInPage clickOnSignInButton(){
         signinButton.click();
-        return new SignInPageDesktop(driver);
+        return new SignInPage(driver);
     }
 
     public void clickOnAllMenuButton(){

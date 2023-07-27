@@ -7,12 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = AccountPageCommon.class)
-public class AccountPageDesktop extends AccountPageCommon {
+public class AccountPage extends AccountPageCommon {
 
     @FindBy(xpath = "//div[@id='a-page']/descendant::h1")
     private ExtendedWebElement yourAccoutTitle;
 
-    public AccountPageDesktop(WebDriver driver){
+    public AccountPage(WebDriver driver){
         super(driver);
     }
 

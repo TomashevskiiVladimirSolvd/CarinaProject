@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = CartPageCommon.class)
-public class CartPageDesktop extends CartPageCommon {
+public class CartPage extends CartPageCommon {
 
     @FindBy (xpath = "//form[@id='activeCartViewForm']/descendant::span[@class='a-truncate-cut']")
     private ExtendedWebElement dumbbellsInCartText;
@@ -18,7 +18,7 @@ public class CartPageDesktop extends CartPageCommon {
     @FindBy(xpath = "//span[@data-action='delete']")
     private ExtendedWebElement deleteButton;
 
-    public CartPageDesktop(WebDriver driver){
+    public CartPage(WebDriver driver){
         super(driver);
     }
 
