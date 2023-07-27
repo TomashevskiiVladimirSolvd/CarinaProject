@@ -1,11 +1,11 @@
-package com.solvd.qa.carina.demo.gui;
+package com.solvd.qa.carina.demo.gui.pages.desktop;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class CartPage extends AbstractUIObject {
+public class CartPageDesktop extends AbstractUIObject {
 
     @FindBy (xpath = "//form[@id='activeCartViewForm']/descendant::span[@class='a-truncate-cut']")
     private ExtendedWebElement dumbbellsInCartText;
@@ -16,7 +16,7 @@ public class CartPage extends AbstractUIObject {
     @FindBy(xpath = "//span[@data-action='delete']")
     private ExtendedWebElement deleteButton;
 
-    public CartPage(WebDriver driver){
+    public CartPageDesktop(WebDriver driver){
         super(driver);
     }
 

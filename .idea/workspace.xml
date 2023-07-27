@@ -5,21 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/TestDataProviders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/AccountPageCommon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/AddedToCartPageCommon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/BasicsNeoprenDubbellPageCommon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageCommon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/api/GetResourceNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePageAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/user.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/APIReqresTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AccountPageDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/AddedToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AddedToCartPageDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/BasicsNeoprenDubbellPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/BasicsNeoprenDubbellPageDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CartPageDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/DumbbellsPageAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/DumbbellsPageAmazonDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePageDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/SignInPageDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/CompareModelsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/ModelInfoPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/CompareModelsPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/ModelInfoPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/AttachFilePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CompareModelsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/ModelInfoPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/WikipediaHomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/WikipediaLocalePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/CompareModelsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/ios/ModelInfoPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/AmazonWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsFreemarker.json" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/api/reqres/_get/rsFreemarker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/attachfile/AttachFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/regression/attachfile/AttachFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690258558614</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add changes">
+      <created>1690332050884</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1690332050884</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add changes">
+      <created>1690422566911</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1690422566912</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

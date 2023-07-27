@@ -1,11 +1,11 @@
-package com.solvd.qa.carina.demo.gui;
+package com.solvd.qa.carina.demo.gui.pages.desktop;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class SignInPage extends AbstractUIObject {
+public class SignInPageDesktop extends AbstractUIObject {
 
     @FindBy(xpath = "//input[@id='ap_email']")
     private ExtendedWebElement emailTextBox;
@@ -16,7 +16,7 @@ public class SignInPage extends AbstractUIObject {
     @FindBy(xpath = "//div[@id='auth-error-message-box']/descendant::h4")
     private ExtendedWebElement errorText;
 
-    public SignInPage(WebDriver driver){
+    public SignInPageDesktop(WebDriver driver){
         super(driver);
     }
 

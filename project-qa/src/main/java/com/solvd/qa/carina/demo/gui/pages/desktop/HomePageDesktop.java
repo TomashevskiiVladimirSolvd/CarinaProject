@@ -1,12 +1,13 @@
-package com.solvd.qa.carina.demo.gui;
+package com.solvd.qa.carina.demo.gui.pages.desktop;
 
+import com.solvd.qa.carina.demo.gui.pages.common.HomePageCommon;
+import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends AbstractUIObject {
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = HomePageCommon.class)
+public class HomePageDesktop extends HomePageCommon {
     @FindBy(xpath = "//a[@id='nav-cart']")
     private ExtendedWebElement cartButton;
 
@@ -35,38 +36,38 @@ public class HomePage extends AbstractUIObject {
     private ExtendedWebElement allMenuButton;
 
 
-    public HomePage(WebDriver driver){
+    public HomePageDesktop(WebDriver driver){
         super(driver);
     }
 
-    public AddedToCartPage clickOnCartButton(){
+    public AddedToCartPageDesktop clickOnCartButton(){
         cartButton.click();
-        return new AddedToCartPage(driver);
+        return new AddedToCartPageDesktop(driver);
     }
 
     public boolean isPageOpened() {
         return logo.isElementPresent();
     }
 
-    public DumbbellsPageAmazon searhItem(String item){
+    public DumbbellsPageAmazonDesktop searhItem(String item){
         searchTextBox.click();
         searchTextBox.type(item);
         searhButton.click();
-        return new DumbbellsPageAmazon(driver);
+        return new DumbbellsPageAmazonDesktop(driver);
     }
 
     public void hoverAccountListSigninButton(){
         accountListSigninButton.hover();
     }
 
-    public AccountPage clickOnAccountLink(){
+    public AccountPageDesktop clickOnAccountLink(){
         accountLink.click();
-        return new AccountPage(driver);
+        return new AccountPageDesktop(driver);
     }
 
-    public SignInPage clickOnSignInButton(){
+    public SignInPageDesktop clickOnSignInButton(){
         signinButton.click();
-        return new SignInPage(driver);
+        return new SignInPageDesktop(driver);
     }
 
     public void clickOnAllMenuButton(){
