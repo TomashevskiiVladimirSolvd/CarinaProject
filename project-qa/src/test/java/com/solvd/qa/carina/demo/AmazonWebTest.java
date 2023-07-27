@@ -15,8 +15,8 @@ public class AmazonWebTest implements IAbstractTest {
         homePageDesktop.open();
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(homePageDesktop.isPageOpened(),"Amazon Home page is not opened");
-        DumbbellsPageAmazonDesktop dumbbellsPageAmazonDesktop = homePageDesktop.searhItem("dumbbells");
-        BasicsNeoprenDubbellPageDesktop basicsNeoprenDubbellPageDesktop = dumbbellsPageAmazonDesktop.clickOnPinkDumbells();
+        DumbbellsPageDesktop dumbbellsPageDesktop = homePageDesktop.searhItem("dumbbells");
+        BasicsNeoprenDubbellPageDesktop basicsNeoprenDubbellPageDesktop = dumbbellsPageDesktop.clickOnPinkDumbells();
         AddedToCartPageDesktop addedToCartPageDesktop = basicsNeoprenDubbellPageDesktop.addItemToCart();
         CartPageDesktop cartPageDesktop = addedToCartPageDesktop.goToCartButton();
         softAssert.assertEquals(cartPageDesktop.getDumbbellsName(),

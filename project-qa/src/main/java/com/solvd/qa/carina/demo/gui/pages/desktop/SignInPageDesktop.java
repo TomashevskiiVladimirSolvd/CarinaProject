@@ -1,11 +1,13 @@
 package com.solvd.qa.carina.demo.gui.pages.desktop;
 
+import com.solvd.qa.carina.demo.gui.pages.common.SignInPageCommon;
+import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class SignInPageDesktop extends AbstractUIObject {
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = SignInPageCommon.class)
+public class SignInPageDesktop extends SignInPageCommon {
 
     @FindBy(xpath = "//input[@id='ap_email']")
     private ExtendedWebElement emailTextBox;

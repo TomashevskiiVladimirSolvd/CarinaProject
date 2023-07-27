@@ -1,11 +1,13 @@
 package com.solvd.qa.carina.demo.gui.pages.desktop;
 
+import com.solvd.qa.carina.demo.gui.pages.common.CartPageCommon;
+import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class CartPageDesktop extends AbstractUIObject {
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = CartPageCommon.class)
+public class CartPageDesktop extends CartPageCommon {
 
     @FindBy (xpath = "//form[@id='activeCartViewForm']/descendant::span[@class='a-truncate-cut']")
     private ExtendedWebElement dumbbellsInCartText;

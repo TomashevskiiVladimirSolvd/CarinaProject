@@ -49,11 +49,11 @@ public class HomePageDesktop extends HomePageCommon {
         return logo.isElementPresent();
     }
 
-    public DumbbellsPageAmazonDesktop searhItem(String item){
+    public DumbbellsPageDesktop searhItem(String item){
         searchTextBox.click();
         searchTextBox.type(item);
         searhButton.click();
-        return new DumbbellsPageAmazonDesktop(driver);
+        return new DumbbellsPageDesktop(driver);
     }
 
     public void hoverAccountListSigninButton(){
