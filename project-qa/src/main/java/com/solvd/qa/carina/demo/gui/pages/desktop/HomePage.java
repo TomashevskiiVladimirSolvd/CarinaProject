@@ -35,6 +35,9 @@ public class HomePage extends HomePageCommon {
     @FindBy(xpath = "//a[@id='nav-hamburger-menu']")
     private ExtendedWebElement allMenuButton;
 
+    @FindBy(xpath = "//div[@id='hmenu-content']/descendant::a[1]")
+    private ExtendedWebElement bestSellerLink;
+
 
     public HomePage(WebDriver driver){
         super(driver);
@@ -74,4 +77,8 @@ public class HomePage extends HomePageCommon {
         allMenuButton.click();
     }
 
+    public BestSellersPage clickOnBestSellerLink(){
+        bestSellerLink.click();
+        return new BestSellersPage(driver);
+    }
 }

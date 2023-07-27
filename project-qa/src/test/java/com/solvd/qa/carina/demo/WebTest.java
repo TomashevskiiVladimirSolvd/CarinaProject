@@ -54,8 +54,10 @@ public class WebTest implements IAbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         homePage.clickOnAllMenuButton();
+        BestSellersPage bestSellersPage= homePage.clickOnBestSellerLink();
+        SoftAssert softAssert= new SoftAssert();
+        softAssert.assertEquals(bestSellersPage.getBestSellersText(),"Amazon Best Sellers","Best Sellers text is not found");
+        softAssert.assertAll();
     }
-
-
 
 }
