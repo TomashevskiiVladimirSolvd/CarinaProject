@@ -5,55 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9207d75-fca5-44d0-8770-2f177c9c8874" name="Changes" comment="add changes">
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/CreateAccountPageCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/CreateAccountPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/android/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-qa/reports/emailable-report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/common/HomePageCommon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/java/com/solvd/qa/carina/demo/gui/pages/desktop/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/main/resources/_config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/src/test/java/com/solvd/qa/carina/demo/WebTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/classes/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/compare/CandidateBlock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/compare/ModelSpecs$SpecType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/components/compare/ModelSpecs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/CompareModelsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/android/ModelInfoPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/CompareModelsPageBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/common/ModelInfoPageBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/AttachFilePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/CompareModelsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/ModelInfoPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/WikipediaHomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/desktop/WikipediaLocalePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/CompareModelsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/classes/com/solvd/qa/carina/demo/gui/pages/ios/ModelInfoPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/com/solvd/qa/carina/demo/regression/attachfile/AttachFileTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/amazon.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/android-dragAndDrop.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/android.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/autodownload.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/dataprovider.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/ios-preferences.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/ios-safari.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/ios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/ios.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/attachFile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/dataprovider-multiply-classes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/dataprovider-retry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/esg-artifact.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/esg-clipboard.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/esg-devtools.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/esg-proxy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/esg-vnc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/regression/xls-dataprovider-retry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web-localization.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web-multiple-browser.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web-open-strategy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web-single-driver.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-qa/target/test-classes/testng_suites/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +65,7 @@
       <recent name="$PROJECT_DIR$/project-qa/src/test/resources/api/starwar/_get" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AmazonWebTest">
+  <component name="RunManager" selected="TestNG.AmazonWebTest.testAddingItemToTheCart">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -190,6 +148,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebTest.testSeleniumFirst" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.qa.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solvd.qa.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.solvd.qa.carina.demo.WebTest" />
+      <option name="METHOD_NAME" value="testSeleniumFirst" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/api.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-qa" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/api.xml" />
@@ -200,23 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/web.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="project-qa" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/project-qa/src/test/resources/testng_suites/web.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AmazonWebTest" />
         <item itemvalue="TestNG.AmazonWebTest.testAddingItemToTheCart" />
+        <item itemvalue="TestNG.WebTest.testSeleniumFirst" />
+        <item itemvalue="TestNG.AmazonWebTest" />
         <item itemvalue="TestNG.APITest" />
         <item itemvalue="TestNG./Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/api.xml" />
-        <item itemvalue="TestNG./Users/virasamarska/IdeaProjects/carina-project/project-qa/src/test/resources/testng_suites/web.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -411,8 +377,24 @@
       <option name="project" value="LOCAL" />
       <updated>1690430338510</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add changes">
+      <created>1690510071883</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1690510071883</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-core" />
+    <option featureType="dependencySupport" implementationName="java:com.azure:azure-storage-blob" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-s3" />
+    <option featureType="dependencySupport" implementationName="java:com.azure:azure-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

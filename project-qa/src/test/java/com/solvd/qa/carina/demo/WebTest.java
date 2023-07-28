@@ -3,36 +3,16 @@ package com.solvd.qa.carina.demo;
 import com.solvd.qa.carina.demo.gui.pages.desktop.*;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+
 public class WebTest implements IAbstractTest {
-
-    static WebDriver driver;
-
-    @BeforeClass
-    public static void setupClass() {
-        System.setProperty("webdriver.chrome.driver", "/Users/virasamarska/Downloads/chromedriver");
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-    }
-
-    @AfterClass
-    public void teardown() {
-        driver.quit();
-    }
-
-
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testAddingItemToTheCart(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
         SoftAssert softAssert = new SoftAssert();
@@ -51,7 +31,7 @@ public class WebTest implements IAbstractTest {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testAccountPage(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
         homePage.hoverAccountListSigninButton();
@@ -65,7 +45,7 @@ public class WebTest implements IAbstractTest {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testNegativeSignIn(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
         homePage.hoverAccountListSigninButton();
@@ -81,7 +61,7 @@ public class WebTest implements IAbstractTest {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testAmazonBestSellers(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
         homePage.clickOnAllMenuButton();
@@ -94,7 +74,7 @@ public class WebTest implements IAbstractTest {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testCreateAccountWithWrongEmail(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePage homePage=new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
         homePage.hoverAccountListSigninButton();
