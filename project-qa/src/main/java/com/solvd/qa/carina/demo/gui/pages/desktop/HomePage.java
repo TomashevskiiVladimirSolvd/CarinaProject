@@ -44,17 +44,21 @@ public class HomePage extends HomePageCommon {
 
     public HomePage(WebDriver driver){
         super(driver);
+        setPageAbsoluteURL("https://www.amazon.com/");
     }
 
+    @Override
     public AddedToCartPage clickOnCartButton(){
         cartButton.click();
         return new AddedToCartPage(driver);
     }
 
+    @Override
     public boolean isPageOpened() {
         return logo.isElementPresent();
     }
 
+    @Override
     public DumbbellsPage searhItem(String item){
         searchTextBox.click();
         searchTextBox.type(item);
@@ -62,26 +66,36 @@ public class HomePage extends HomePageCommon {
         return new DumbbellsPage(driver);
     }
 
+    @Override
     public void hoverAccountListSigninButton(){
         accountListSigninButton.hover();
     }
 
+    @Override
     public AccountPage clickOnAccountLink(){
         accountLink.click();
         return new AccountPage(driver);
     }
 
+    @Override
     public SignInPage clickOnSignInButton(){
         signinButton.click();
         return new SignInPage(driver);
     }
 
+    @Override
     public void clickOnAllMenuButton(){
         allMenuButton.click();
     }
 
+    @Override
     public BestSellersPage clickOnBestSellerLink(){
         bestSellerLink.click();
         return new BestSellersPage(driver);
+    }
+    @Override
+    public CreateAccountPage clickOnStartNewCustomerLink(){
+        startNewCustomerLink.click();
+        return new CreateAccountPage(driver);
     }
 }
