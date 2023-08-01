@@ -1,11 +1,11 @@
-package com.solvd.qa.carina.demo.gui.components.navigator;
+package com.solvd.qa.carina.demo.gui.components.header;
 
 import com.solvd.qa.carina.demo.gui.pages.desktop.*;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class Header extends HeaderCommon {
+public class HeaderComponent extends HeaderComponentAbstract {
     @FindBy(xpath ="//input[@id='twotabsearchtextbox']")
     private ExtendedWebElement searchTextBox;
 
@@ -26,7 +26,7 @@ public class Header extends HeaderCommon {
     @FindBy(xpath ="//div[@id='nav-al-your-account']//span")
     private ExtendedWebElement accountLink;
 
-    public Header(WebDriver driver) {
+    public HeaderComponent(WebDriver driver) {
         super(driver);
     }
 

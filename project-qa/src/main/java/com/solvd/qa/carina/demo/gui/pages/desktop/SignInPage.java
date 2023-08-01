@@ -1,13 +1,13 @@
 package com.solvd.qa.carina.demo.gui.pages.desktop;
 
-import com.solvd.qa.carina.demo.gui.pages.common.SignInPageCommon;
+import com.solvd.qa.carina.demo.gui.pages.common.SignInPageAbstract;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = SignInPageCommon.class)
-public class SignInPage extends SignInPageCommon {
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = SignInPageAbstract.class)
+public class SignInPage extends SignInPageAbstract {
 
     @FindBy(xpath = "//input[@id='ap_email']")
     private ExtendedWebElement emailTextBox;
@@ -26,8 +26,7 @@ public class SignInPage extends SignInPageCommon {
        return errorText.getText();
     }
 
-    public void clickAndInputEmail(String wrongEmail){
-        emailTextBox.click();
+    public void setEmail(String wrongEmail){
         emailTextBox.type(wrongEmail);
     }
 

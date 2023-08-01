@@ -1,13 +1,13 @@
 package com.solvd.qa.carina.demo.gui.pages.desktop;
 
-import com.solvd.qa.carina.demo.gui.pages.common.ItemsPageCommon;
+import com.solvd.qa.carina.demo.gui.pages.common.ItemsPageAbstract;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = ItemsPageCommon.class)
-public class SearchItemsPage extends ItemsPageCommon {
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = ItemsPageAbstract.class)
+public class SearchItemsPage extends ItemsPageAbstract {
 
     @FindBy(xpath = "//div[@class='a-section aok-relative s-image-square-aspect']")
     private ExtendedWebElement smallPinkDumbells;
@@ -16,8 +16,8 @@ public class SearchItemsPage extends ItemsPageCommon {
         super(driver);
     }
 
-    public BasicsNeoprenDubbellPage clickOnPinkDumbells(){
+    public ItemPage clickOnPinkDumbells(){
         smallPinkDumbells.click();
-        return new BasicsNeoprenDubbellPage(driver);
+        return new ItemPage(driver);
     }
 }

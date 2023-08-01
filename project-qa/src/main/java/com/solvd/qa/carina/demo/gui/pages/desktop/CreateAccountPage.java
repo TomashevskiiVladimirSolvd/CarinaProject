@@ -1,14 +1,13 @@
 package com.solvd.qa.carina.demo.gui.pages.desktop;
 
-import com.solvd.qa.carina.demo.gui.pages.common.CreateAccountPageCommon;
+import com.solvd.qa.carina.demo.gui.pages.common.CreateAccountPageAbstract;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = CreateAccountPageCommon.class)
-public class CreateAccountPage extends CreateAccountPageCommon {
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = CreateAccountPageAbstract.class)
+public class CreateAccountPage extends CreateAccountPageAbstract {
 
     @FindBy(xpath = "//input[@id='ap_customer_name']")
     private ExtendedWebElement yourNameTextBox;
@@ -30,21 +29,17 @@ public class CreateAccountPage extends CreateAccountPageCommon {
         super(driver);
     }
 
-    public void clickAndInputName(String name){
-        yourNameTextBox.click();
+    public void setName(String name){
         yourNameTextBox.type(name);
     }
-    public void clickAndInputEmail(String email){
-        emailTextBox.click();
+    public void setEmail(String email){
         emailTextBox.type(email);
 
     }
-    public void clickAndInputPassword(String password){
-      passwordTextBox.click();
+    public void setPassword(String password){
       passwordTextBox.type(password);
     }
-    public void clickAndInputRePassword(String rePassword){
-      reEnterPasswordTextBox.click();
+    public void setRePassword(String rePassword){
       reEnterPasswordTextBox.type(rePassword);
     }
 

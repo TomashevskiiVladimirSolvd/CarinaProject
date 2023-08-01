@@ -1,7 +1,7 @@
 package com.solvd.qa.carina.demo;
 
-import com.solvd.qa.carina.demo.gui.components.navigator.Header;
-import com.solvd.qa.carina.demo.gui.components.top.NavigationBar;
+import com.solvd.qa.carina.demo.gui.components.header.HeaderComponent;
+import com.solvd.qa.carina.demo.gui.components.navigation.NavigationComponent;
 import com.solvd.qa.carina.demo.gui.pages.desktop.*;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
@@ -17,9 +17,9 @@ public class WebTest implements IAbstractTest {
        HomePage homePage=new HomePage(getDriver());
        homePage.open();
        assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-       Header header=new Header(getDriver());
-       SearchItemsPage itemsPage = header.searhItem("dumbbells");
-       BasicsNeoprenDubbellPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
+       HeaderComponent headerComponent =new HeaderComponent(getDriver());
+       SearchItemsPage itemsPage = headerComponent.searhItem("dumbbells");
+       ItemPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
        AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
        assertEquals(addedToCartPage.getAddedToCartText(),"Added to Cart","added to cart text is not found");
     }
@@ -30,9 +30,9 @@ public class WebTest implements IAbstractTest {
       HomePage homePage=new HomePage(getDriver());
        homePage.open();
        assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-        Header header=new Header(getDriver());
-        header.hoverAccountListSigninButton();
-        AccountPage accountPage = header.clickOnAccountLink();
+        HeaderComponent headerComponent =new HeaderComponent(getDriver());
+        headerComponent.hoverAccountListSigninButton();
+        AccountPage accountPage = headerComponent.clickOnAccountLink();
        assertEquals(accountPage.getAccountTitle(),"Your Account",
                 "You are not on the AccountPage");
     }
@@ -43,9 +43,9 @@ public class WebTest implements IAbstractTest {
       HomePage homePage=new HomePage(getDriver());
       homePage.open();
       assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-      Header header=new Header(getDriver());
-      SignInPage signInPage = header.clickOnAccountListSigninButton();
-      signInPage.clickAndInputEmail("tomalli1234@mail.ru");
+      HeaderComponent headerComponent =new HeaderComponent(getDriver());
+      SignInPage signInPage = headerComponent.clickOnAccountListSigninButton();
+      signInPage.setEmail("tomalli1234@mail.ru");
       signInPage.clickOnContinueButton();
       assertEquals(signInPage.getErrorText(),"There was a problem",
                "Error text in not found.");
@@ -57,9 +57,9 @@ public class WebTest implements IAbstractTest {
      HomePage homePage=new HomePage(getDriver());
      homePage.open();
      assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-     NavigationBar navigationBar = new NavigationBar(getDriver());
-     navigationBar.clickOnAllMenuButton();
-     BestSellersPage bestSellersPage= navigationBar.clickOnBestSellerLink();
+     NavigationComponent navigationComponent = new NavigationComponent(getDriver());
+     navigationComponent.clickOnAllMenuButton();
+     BestSellersPage bestSellersPage= navigationComponent.clickOnBestSellerLink();
      assertEquals(bestSellersPage.getBestSellersText(),"Amazon Best Sellers",
                 "Best Sellers text is not found");
     }
@@ -70,13 +70,13 @@ public class WebTest implements IAbstractTest {
        HomePage homePage=new HomePage(getDriver());
        homePage.open();
        assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-       Header header=new Header(getDriver());
-       header.hoverAccountListSigninButton();
-       CreateAccountPage createAccountPage=header.clickOnStartNewCustomerLink();
-       createAccountPage.clickAndInputName("Name");
-       createAccountPage.clickAndInputEmail("email@mail.ru");
-       createAccountPage.clickAndInputPassword("123456");
-       createAccountPage.clickAndInputRePassword("123456");
+       HeaderComponent headerComponent =new HeaderComponent(getDriver());
+       headerComponent.hoverAccountListSigninButton();
+       CreateAccountPage createAccountPage= headerComponent.clickOnStartNewCustomerLink();
+       createAccountPage.setName("Name");
+       createAccountPage.setEmail("email@mail.ru");
+       createAccountPage.setPassword("123456");
+       createAccountPage.setRePassword("123456");
        createAccountPage.clickOnContinueButton();
        assertTrue(createAccountPage.isContinueButtonPresented(),"ContinueButton is not presented");
     }

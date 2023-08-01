@@ -1,4 +1,4 @@
-package com.solvd.qa.carina.demo.gui.components.navigator;
+package com.solvd.qa.carina.demo.gui.components.header;
 
 import com.solvd.qa.carina.demo.gui.pages.desktop.AccountPage;
 import com.solvd.qa.carina.demo.gui.pages.desktop.CreateAccountPage;
@@ -8,12 +8,12 @@ import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 
-public abstract class HeaderCommon extends AbstractUIObject {
-    public HeaderCommon(WebDriver driver, SearchContext searchContext) {
+public abstract class HeaderComponentAbstract extends AbstractUIObject {
+    public HeaderComponentAbstract(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
-    public HeaderCommon(WebDriver driver) {
+    public HeaderComponentAbstract(WebDriver driver) {
         super(driver);
     }
 
