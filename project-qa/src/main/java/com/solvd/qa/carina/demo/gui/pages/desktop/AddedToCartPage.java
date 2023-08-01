@@ -9,17 +9,18 @@ import org.openqa.selenium.support.FindBy;
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = AddedToCartPageCommon.class)
 public class AddedToCartPage extends AddedToCartPageCommon {
 
-    @FindBy(xpath = "//span[@id='sw-gtc']/descendant::a")
-    private  ExtendedWebElement goToCartButton;
+    @FindBy(xpath = "//div[@id='NATC_SMART_WAGON_CONF_MSG_SUCCESS']//span")
+    private  ExtendedWebElement addedToCartText;
 
     public AddedToCartPage(WebDriver driver){
         super(driver);
     }
 
-    public CartPage goToCartButton(){
-        goToCartButton.click();
-        return new CartPage(driver);
+    public String getAddedToCartText(){
+        return addedToCartText.getText();
     }
+
+
 
 
 }

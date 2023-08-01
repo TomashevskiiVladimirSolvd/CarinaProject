@@ -49,11 +49,17 @@
 			<groupId>com.zebrunner</groupId>
 			<artifactId>carina-dataprovider</artifactId>
 			<version>${carina-dataprovider.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.zebrunner</groupId>
 			<artifactId>carina-api</artifactId>
-			<version>RELEASE</version>
+			<version>${carina-api.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.zebrunner</groupId>
@@ -112,13 +118,13 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>3.8.1</version>
+			<version>5.4.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
-			<version>RELEASE</version>
+			<version>5.9.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -127,9 +133,14 @@
 			<version>2.9</version>
 		</dependency>
 		<dependency>
-			<groupId>pl.oakfusion</groupId>
-			<artifactId>chromedriver</artifactId>
-			<version>2.9</version>
+			<groupId>com.zebrunner</groupId>
+			<artifactId>agent-testng</artifactId>
+			<version>1.9.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zebrunner</groupId>
+			<artifactId>agent-core</artifactId>
+			<version>1.9.7</version>
 		</dependency>
 	</dependencies>
 
@@ -160,23 +171,23 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- <artifactItems>
-                            <artifactItem>
-                                <groupId>com.zebrunner</groupId>
-                                <artifactId>agent-core</artifactId>
-                                <version>${zebrunner-agent.version}</version>
-                                <outputDirectory>${project.build.directory}/agent</outputDirectory>
-                                <destFileName>zebrunner-agent.jar</destFileName>
-                            </artifactItem>
-                        </artifactItems>-->
-                    </configuration>
-                </plugin>
+					<artifactItems>
+						<artifactItem>
+							<groupId>com.zebrunner</groupId>
+							<artifactId>agent-core</artifactId>
+							<version>${zebrunner-agent.version}</version>
+							<outputDirectory>${project.build.directory}/agent</outputDirectory>
+							<destFileName>zebrunner-agent.jar</destFileName>
+						</artifactItem>
+					</artifactItems>
+				</configuration>
+			</plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.1.0</version>
                     <configuration>
-                       <!-- <argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>-->
+                       <argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>
                         <useSystemClassLoader>false</useSystemClassLoader>
                         <suiteXmlFiles>
                             <suiteXmlFile>${project.build.directory}/test-classes/testng_suites/${suite}.xml</suiteXmlFile>

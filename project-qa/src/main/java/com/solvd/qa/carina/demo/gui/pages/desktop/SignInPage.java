@@ -28,7 +28,7 @@ public class SignInPage extends SignInPageCommon {
 
     public void clickAndInputEmail(String wrongEmail){
         emailTextBox.click();
-        emailTextBox.setName(wrongEmail);
+        emailTextBox.type(wrongEmail);
     }
 
     public void clickOnContinueButton(){

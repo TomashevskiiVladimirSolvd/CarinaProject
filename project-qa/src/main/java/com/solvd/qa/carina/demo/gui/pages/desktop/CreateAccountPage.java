@@ -3,6 +3,7 @@ package com.solvd.qa.carina.demo.gui.pages.desktop;
 import com.solvd.qa.carina.demo.gui.pages.common.CreateAccountPageCommon;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -24,9 +25,6 @@ public class CreateAccountPage extends CreateAccountPageCommon {
     @FindBy(xpath = "//input[@id='continue']")
     private ExtendedWebElement continueButton;
 
-    @FindBy(xpath = "//div[@id='auth-email-invalid-claim-alert']/descendant::div[@class='a-alert-content']")
-    private ExtendedWebElement wrongEmailMessage;
-
 
     public CreateAccountPage(WebDriver driver){
         super(driver);
@@ -34,28 +32,28 @@ public class CreateAccountPage extends CreateAccountPageCommon {
 
     public void clickAndInputName(String name){
         yourNameTextBox.click();
-        yourNameTextBox.setName(name);
+        yourNameTextBox.type(name);
     }
     public void clickAndInputEmail(String email){
         emailTextBox.click();
-        emailTextBox.setName(email);
+        emailTextBox.type(email);
 
     }
     public void clickAndInputPassword(String password){
       passwordTextBox.click();
-      passwordTextBox.setName(password);
+      passwordTextBox.type(password);
     }
     public void clickAndInputRePassword(String rePassword){
       reEnterPasswordTextBox.click();
-      reEnterPasswordTextBox.setName(rePassword);
+      reEnterPasswordTextBox.type(rePassword);
     }
 
     public void clickOnContinueButton(){
         continueButton.click();
     }
 
-    public String getWrongEmailText(){
-        return wrongEmailMessage.getText();
+    public boolean isContinueButtonPresented(){
+        return continueButton.isElementPresent();
     }
 
 }
