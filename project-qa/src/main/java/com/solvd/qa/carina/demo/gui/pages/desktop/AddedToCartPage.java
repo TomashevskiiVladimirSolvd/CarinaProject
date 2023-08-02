@@ -16,6 +16,7 @@ public class AddedToCartPage extends AddedToCartPageAbstract {
         super(driver);
     }
 
+    @Override
     public String getAddedToCartText(){
         return addedToCartText.getText();
     }

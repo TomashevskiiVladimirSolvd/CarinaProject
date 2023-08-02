@@ -22,14 +22,17 @@ public class SignInPage extends SignInPageAbstract {
         super(driver);
     }
 
+    @Override
     public String getErrorText(){
        return errorText.getText();
     }
 
-    public void setEmail(String wrongEmail){
-        emailTextBox.type(wrongEmail);
+    @Override
+    public void setEmail(String email){
+        emailTextBox.type(email);
     }
 
+    @Override
     public void clickOnContinueButton(){
         continueButton.click();
     }

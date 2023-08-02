@@ -19,6 +19,7 @@ public class ItemPage extends ItemPageAbstract {
         super(driver);
     }
 
+    @Override
     public AddedToCartPage addItemToCart(){
         addToCartButton.click();
         return new AddedToCartPage(driver);

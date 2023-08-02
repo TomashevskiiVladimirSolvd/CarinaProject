@@ -18,7 +18,7 @@ public class WebTest implements IAbstractTest {
        homePage.open();
        assertTrue(homePage.isPageOpened(), "Home page is not opened!");
        HeaderComponent headerComponent =new HeaderComponent(getDriver());
-       SearchItemsPage itemsPage = headerComponent.searhItem("dumbbells");
+       ItemsPage itemsPage = headerComponent.searhItem("dumbbells");
        ItemPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
        AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
        assertEquals(addedToCartPage.getAddedToCartText(),"Added to Cart","added to cart text is not found");
@@ -73,7 +73,7 @@ public class WebTest implements IAbstractTest {
        HeaderComponent headerComponent =new HeaderComponent(getDriver());
        headerComponent.hoverAccountListSigninButton();
        CreateAccountPage createAccountPage= headerComponent.clickOnStartNewCustomerLink();
-       createAccountPage.setName("Name");
+       createAccountPage.typeName("Name");
        createAccountPage.setEmail("email@mail.ru");
        createAccountPage.setPassword("123456");
        createAccountPage.setRePassword("123456");

@@ -1,4 +1,4 @@
-package com.solvd.qa.carina.demo.gui.pages.desktop;
+package com.solvd.qa.carina.demo.gui.pages.android;
 
 import com.solvd.qa.carina.demo.gui.pages.common.CreateAccountPageAbstract;
 import com.zebrunner.carina.utils.factory.DeviceType;
@@ -6,9 +6,8 @@ import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = CreateAccountPageAbstract.class)
-public class CreateAccountPage extends CreateAccountPageAbstract {
-
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE,parentClass = CreateAccountPageAbstract.class)
+public class CreateAccountPage extends CreateAccountPageAbstract{
     @FindBy(xpath = "//input[@id='ap_customer_name']")
     private ExtendedWebElement yourNameTextBox;
 
@@ -18,18 +17,14 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
     @FindBy(xpath = "//input[@id='ap_password']")
     private ExtendedWebElement passwordTextBox;
 
-    @FindBy(xpath = "//input[@id='ap_password_check']")
-    private ExtendedWebElement reEnterPasswordTextBox;
+    @FindBy(xpath = "//form[@id='ap_register_form']//input[@id='continue']  ")
+    private ExtendedWebElement continueRegisterButton;
 
-    @FindBy(xpath = "//input[@id='continue']")
-    private ExtendedWebElement continueButton;
-
-
-    public CreateAccountPage(WebDriver driver){
+    @FindBy(xpath = "//div[@class='a-box-inner a-alert-container']//div[contains(.,'Wrong or Invalid email')] ")
+    private ExtendedWebElement invalidEmailText;
+    public CreateAccountPage(WebDriver driver) {
         super(driver);
     }
-
-
     @Override
     public void typeName(String name){
         yourNameTextBox.type(name);
@@ -41,18 +36,15 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
     }
     @Override
     public void setPassword(String password){
-      passwordTextBox.type(password);
-    }
-    public void setRePassword(String rePassword){
-      reEnterPasswordTextBox.type(rePassword);
+        passwordTextBox.type(password);
     }
 
     public void clickOnContinueButton(){
-        continueButton.click();
+        continueRegisterButton.click();
     }
 
-    public boolean isContinueButtonPresented(){
-        return continueButton.isElementPresent();
+    public String getInvalidEmailText(){
+       return invalidEmailText.getText();
     }
 
 }

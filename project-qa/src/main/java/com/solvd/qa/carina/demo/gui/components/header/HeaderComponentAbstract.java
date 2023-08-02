@@ -2,7 +2,7 @@ package com.solvd.qa.carina.demo.gui.components.header;
 
 import com.solvd.qa.carina.demo.gui.pages.desktop.AccountPage;
 import com.solvd.qa.carina.demo.gui.pages.desktop.CreateAccountPage;
-import com.solvd.qa.carina.demo.gui.pages.desktop.SearchItemsPage;
+import com.solvd.qa.carina.demo.gui.pages.desktop.ItemsPage;
 import com.solvd.qa.carina.demo.gui.pages.desktop.SignInPage;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
@@ -17,7 +17,7 @@ public abstract class HeaderComponentAbstract extends AbstractUIObject {
         super(driver);
     }
 
-    protected abstract SearchItemsPage searhItem(String item);
+    protected abstract ItemsPage searhItem(String item);
 
     public abstract boolean isPageOpened();
     protected abstract void hoverAccountListSigninButton();

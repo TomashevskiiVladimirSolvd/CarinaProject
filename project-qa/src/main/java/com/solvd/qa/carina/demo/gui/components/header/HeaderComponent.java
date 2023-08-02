@@ -32,11 +32,11 @@ public class HeaderComponent extends HeaderComponentAbstract {
 
 
     @Override
-    public SearchItemsPage searhItem(String item){
+    public ItemsPage searhItem(String item){
         searchTextBox.click();
         searchTextBox.type(item);
         searhButton.click();
-        return new SearchItemsPage(driver);
+        return new ItemsPage(driver);
     }
 
     @Override
