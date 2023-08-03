@@ -24,6 +24,9 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
     @FindBy(xpath = "//input[@id='continue']")
     private ExtendedWebElement continueButton;
 
+    @FindBy(xpath = "//div[@class='a-box-inner a-alert-container']//div[contains(.,'Wrong or Invalid email')]")
+    private ExtendedWebElement invalidEmailText;
+
 
     public CreateAccountPage(WebDriver driver) {
         super(driver);
@@ -56,6 +59,11 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
 
     public boolean isContinueButtonPresented() {
         return continueButton.isElementPresent();
+    }
+
+    @Override
+    public String getInvalidEmailText() {
+        return invalidEmailText.getText();
     }
 
 }

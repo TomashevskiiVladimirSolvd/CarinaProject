@@ -17,10 +17,10 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
     @FindBy(xpath = "//input[@id='ap_password']")
     private ExtendedWebElement passwordTextBox;
 
-    @FindBy(xpath = "//form[@id='ap_register_form']//input[@id='continue']  ")
+    @FindBy(xpath = "//form[@id='ap_register_form']//input[@id='continue']")
     private ExtendedWebElement continueRegisterButton;
 
-    @FindBy(xpath = "//div[@class='a-box-inner a-alert-container']//div[contains(.,'Wrong or Invalid email')] ")
+    @FindBy(xpath = "//div[@class='a-box-inner a-alert-container']//div[contains(.,'Wrong or Invalid email')]")
     private ExtendedWebElement invalidEmailText;
 
     public CreateAccountPage(WebDriver driver) {
@@ -47,6 +47,7 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
         continueRegisterButton.click();
     }
 
+    @Override
     public String getInvalidEmailText() {
         return invalidEmailText.getText();
     }

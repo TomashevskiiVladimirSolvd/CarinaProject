@@ -13,4 +13,6 @@ public abstract class CreateAccountPageAbstract extends AbstractPage {
     protected abstract void setEmail(String email);
 
     protected abstract void setPassword(String password);
+
+    protected abstract String getInvalidEmailText();
 }

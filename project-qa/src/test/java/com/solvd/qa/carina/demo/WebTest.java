@@ -6,6 +6,7 @@ import com.solvd.qa.carina.demo.gui.pages.common.HomePageAbstract;
 import com.solvd.qa.carina.demo.gui.pages.desktop.*;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -18,7 +19,7 @@ public class WebTest implements IAbstractTest {
         HomePageAbstract homePage = initPage(getDriver(), HomePageAbstract.class);
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-        HeaderComponent headerComponent = new HeaderComponent(getDriver());
+        HeaderComponent headerComponent = homePage.getHeader();
         ItemsPage itemsPage = headerComponent.searhItem("dumbbells");
         ItemPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
         AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
@@ -31,7 +32,7 @@ public class WebTest implements IAbstractTest {
         HomePageAbstract homePage = initPage(getDriver(), HomePageAbstract.class);
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-        HeaderComponent headerComponent = new HeaderComponent(getDriver());
+        HeaderComponent headerComponent = homePage.getHeader();
         headerComponent.hoverAccountListSigninButton();
         AccountPage accountPage = headerComponent.clickOnAccountLink();
         assertEquals(accountPage.getAccountTitle(), "Your Account",
@@ -44,7 +45,7 @@ public class WebTest implements IAbstractTest {
         HomePageAbstract homePage = initPage(getDriver(), HomePageAbstract.class);
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-        HeaderComponent headerComponent = new HeaderComponent(getDriver());
+        HeaderComponent headerComponent = homePage.getHeader();
         SignInPage signInPage = headerComponent.clickOnAccountListSigninButton();
         signInPage.setEmail("tomalli1234@mail.ru");
         signInPage.clickOnContinueButton();
@@ -58,7 +59,7 @@ public class WebTest implements IAbstractTest {
         HomePageAbstract homePage = initPage(getDriver(), HomePageAbstract.class);
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-        NavigationComponent navigationComponent = new NavigationComponent(getDriver());
+        NavigationComponent navigationComponent = homePage.getNavigation();
         navigationComponent.clickOnAllMenuButton();
         BestSellersPage bestSellersPage = navigationComponent.clickOnBestSellerLink();
         assertEquals(bestSellersPage.getBestSellersText(), "Amazon Best Sellers",
@@ -71,7 +72,7 @@ public class WebTest implements IAbstractTest {
         HomePageAbstract homePage = initPage(getDriver(), HomePageAbstract.class);
         homePage.open();
         assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-        HeaderComponent headerComponent = new HeaderComponent(getDriver());
+        HeaderComponent headerComponent = homePage.getHeader();
         headerComponent.hoverAccountListSigninButton();
         CreateAccountPage createAccountPage = headerComponent.clickOnStartNewCustomerLink();
         createAccountPage.typeName("Name");
@@ -80,5 +81,8 @@ public class WebTest implements IAbstractTest {
         createAccountPage.setRePassword("123456");
         createAccountPage.clickOnContinueButton();
         assertTrue(createAccountPage.isContinueButtonPresented(), "ContinueButton is not presented");
+        Assert.assertEquals(createAccountPage.getInvalidEmailText().trim(),
+                "Wrong or Invalid email address or mobile phone number. Please correct and try again.",
+                "wrong email text is not found");
     }
 }
