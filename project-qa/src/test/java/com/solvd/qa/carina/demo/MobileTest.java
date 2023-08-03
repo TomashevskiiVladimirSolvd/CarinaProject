@@ -26,6 +26,8 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
     public void testMenuButton() {
         HomePage homePage= new HomePage(getDriver());
         homePage.open();
+        homePage.clickOnMenuButton();
+        Assert.assertEquals(homePage.getMenuText(), "Amazon Home", "menu text is not found");
     }
 
     @Test
@@ -33,6 +35,9 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
     public void testAmazonBestSellers() {
         HomePage homePage= new HomePage(getDriver());
         homePage.open();
+        homePage.clickOnMenuButton();
+        BestSellersPage bestSellersPage = homePage.clickOnBestSellersLink();
+        Assert.assertEquals(bestSellersPage.getBestSellersTitle(), "Amazon Best Sellers", "Best Sellers Title is not found");
     }
 
     @Test

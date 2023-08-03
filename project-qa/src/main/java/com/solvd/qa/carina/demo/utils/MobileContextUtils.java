@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import com.zebrunner.carina.webdriver.DriverHelper;
 import com.zebrunner.carina.webdriver.IDriverPool;
 
-import io.appium.java_client.remote.SupportsContextSwitching;
+
 
 public class MobileContextUtils implements IDriverPool {
 
@@ -54,7 +54,7 @@ public class MobileContextUtils implements IDriverPool {
             throw new NotFoundException("Desired context is not present");
         }
         LOGGER.info("Switching to context : " + desiredContext);
-        ((SupportsContextSwitching) driver).context(desiredContext);
+  //      ((SupportsContextSwitching) driver).context(desiredContext);
     }
 
     public enum View {
