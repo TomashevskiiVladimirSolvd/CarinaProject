@@ -23,7 +23,7 @@ public class WebTest implements IAbstractTest {
         ItemsPage itemsPage = headerComponent.searhItem("dumbbells");
         ItemPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
         AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
-        assertEquals(addedToCartPage.getAddedToCartText(), "Added to Cart", "added to cart text is not found");
+        assertEquals(addedToCartPage.getAddedToCartText().trim(), "Added to Cart", "added to cart text is not found");
     }
 
     @Test
@@ -35,7 +35,7 @@ public class WebTest implements IAbstractTest {
         HeaderComponent headerComponent = homePage.getHeader();
         headerComponent.hoverAccountListSigninButton();
         AccountPage accountPage = headerComponent.clickOnAccountLink();
-        assertEquals(accountPage.getAccountTitle(), "Your Account",
+        assertEquals(accountPage.getAccountTitle().trim(), "Your Account",
                 "You are not on the AccountPage");
     }
 
@@ -49,7 +49,7 @@ public class WebTest implements IAbstractTest {
         SignInPage signInPage = headerComponent.clickOnAccountListSigninButton();
         signInPage.setEmail("tomalli1234@mail.ru");
         signInPage.clickOnContinueButton();
-        assertEquals(signInPage.getErrorText(), "There was a problem",
+        assertEquals(signInPage.getErrorText().trim(), "There was a problem",
                 "Error text in not found.");
     }
 
@@ -62,7 +62,7 @@ public class WebTest implements IAbstractTest {
         NavigationComponent navigationComponent = homePage.getNavigation();
         navigationComponent.clickOnAllMenuButton();
         BestSellersPage bestSellersPage = navigationComponent.clickOnBestSellerLink();
-        assertEquals(bestSellersPage.getBestSellersText(), "Amazon Best Sellers",
+        assertEquals(bestSellersPage.getBestSellersText().trim(), "Amazon Best Sellers",
                 "Best Sellers text is not found");
     }
 
