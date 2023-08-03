@@ -9,22 +9,22 @@ import org.testng.annotations.Test;
 
 public class MobileTest implements IAbstractTest, IMobileUtils {
     @Test()
-    @MethodOwner(owner="vtomashevskii")
-    public void testAddingItemToTheCart(){
-        HomePage homePage= new HomePage(getDriver());
+    @MethodOwner(owner = "vtomashevskii")
+    public void testAddingItemToTheCart() {
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         homePage.clickOnSearchTextBox();
         homePage.typeSearchTextBox("dumbells");
         ItemsPage itemsPage = homePage.clickOnSearchButton();
-        ItemPage itemPage=itemsPage.clickOnPinkDumbells();
+        ItemPage itemPage = itemsPage.clickOnPinkDumbells();
         AddedToCartPage addedToCartPage = itemPage.addItemToCart();
-        Assert.assertEquals(addedToCartPage.getAddedToCartText(),"Added to Cart","added to cart text is not found");
+        Assert.assertEquals(addedToCartPage.getAddedToCartText(), "Added to Cart", "added to cart text is not found");
     }
 
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testMenuButton() {
-        HomePage homePage= new HomePage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         homePage.clickOnMenuButton();
         Assert.assertEquals(homePage.getMenuText(), "Amazon Home", "menu text is not found");
@@ -33,7 +33,7 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testAmazonBestSellers() {
-        HomePage homePage= new HomePage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         homePage.clickOnMenuButton();
         BestSellersPage bestSellersPage = homePage.clickOnBestSellersLink();
@@ -43,10 +43,10 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testCreateAccountWithWrongEmail() {
-        HomePage homePage= new HomePage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         SignInPage signInPage = homePage.clickOnSignInButton();
-        CreateAccountPage createAccountPage=signInPage.clickOnCreateAccountButton();
+        CreateAccountPage createAccountPage = signInPage.clickOnCreateAccountButton();
         createAccountPage.typeName("Name");
         createAccountPage.setEmail("asd");
         createAccountPage.setPassword("123456");
@@ -59,12 +59,12 @@ public class MobileTest implements IAbstractTest, IMobileUtils {
     @Test
     @MethodOwner(owner = "vtomashevskii")
     public void testNegativeSignIn() {
-        HomePage homePage= new HomePage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         SignInPage signInPage = homePage.clickOnSignInButton();
         signInPage.setEmail("dguj");
         signInPage.clickOnContinueButton();
-        Assert.assertEquals(signInPage.getErrorText(),"No account found with email address",
+        Assert.assertEquals(signInPage.getErrorText(), "No account found with email address",
                 "Error text in not found.");
     }
 }

@@ -6,8 +6,8 @@ import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE,parentClass = CreateAccountPageAbstract.class)
-public class CreateAccountPage extends CreateAccountPageAbstract{
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = CreateAccountPageAbstract.class)
+public class CreateAccountPage extends CreateAccountPageAbstract {
     @FindBy(xpath = "//input[@id='ap_customer_name']")
     private ExtendedWebElement yourNameTextBox;
 
@@ -22,29 +22,33 @@ public class CreateAccountPage extends CreateAccountPageAbstract{
 
     @FindBy(xpath = "//div[@class='a-box-inner a-alert-container']//div[contains(.,'Wrong or Invalid email')] ")
     private ExtendedWebElement invalidEmailText;
+
     public CreateAccountPage(WebDriver driver) {
         super(driver);
     }
+
     @Override
-    public void typeName(String name){
+    public void typeName(String name) {
         yourNameTextBox.type(name);
     }
+
     @Override
-    public void setEmail(String email){
+    public void setEmail(String email) {
         emailTextBox.type(email);
 
     }
+
     @Override
-    public void setPassword(String password){
+    public void setPassword(String password) {
         passwordTextBox.type(password);
     }
 
-    public void clickOnContinueButton(){
+    public void clickOnContinueButton() {
         continueRegisterButton.click();
     }
 
-    public String getInvalidEmailText(){
-       return invalidEmailText.getText();
+    public String getInvalidEmailText() {
+        return invalidEmailText.getText();
     }
 
 }

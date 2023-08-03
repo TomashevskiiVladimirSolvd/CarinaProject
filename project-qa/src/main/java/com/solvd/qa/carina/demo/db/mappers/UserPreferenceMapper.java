@@ -4,7 +4,7 @@ import com.solvd.qa.carina.demo.db.models.UserPreference;
 
 public interface UserPreferenceMapper {
 
-	void create(UserPreference userPreference);
+    void create(UserPreference userPreference);
 
-	UserPreference findById(Long id);
+    UserPreference findById(Long id);
 }

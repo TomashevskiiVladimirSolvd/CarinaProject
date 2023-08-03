@@ -11,12 +11,13 @@ public class ItemPage extends ItemPageAbstract {
 
     @FindBy(xpath = "//input[@id='add-to-cart-button'] ")
     private ExtendedWebElement addToCartButton;
-    ItemPage(WebDriver driver){
+
+    ItemPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public AddedToCartPage addItemToCart(){
+    public AddedToCartPage addItemToCart() {
         addToCartButton.click();
         return new AddedToCartPage(driver);
     }

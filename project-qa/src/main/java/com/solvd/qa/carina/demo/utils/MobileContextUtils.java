@@ -1,8 +1,7 @@
 package com.solvd.qa.carina.demo.utils;
 
-import java.lang.invoke.MethodHandles;
-import java.util.Set;
-
+import com.zebrunner.carina.webdriver.DriverHelper;
+import com.zebrunner.carina.webdriver.IDriverPool;
 import org.openqa.selenium.ContextAware;
 import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +9,8 @@ import org.openqa.selenium.support.decorators.Decorated;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.zebrunner.carina.webdriver.DriverHelper;
-import com.zebrunner.carina.webdriver.IDriverPool;
-
+import java.lang.invoke.MethodHandles;
+import java.util.Set;
 
 
 public class MobileContextUtils implements IDriverPool {
@@ -29,7 +27,7 @@ public class MobileContextUtils implements IDriverPool {
         return driver;
     }
 
-    public void switchMobileContext(View context){
+    public void switchMobileContext(View context) {
         switchMobileContext(context, null);
     }
 
@@ -42,7 +40,7 @@ public class MobileContextUtils implements IDriverPool {
         LOGGER.info("Existing contexts: ");
         for (String cont : contextHandles) {
             if (cont.contains(context.getView())) {
-                if (exclude != null && cont.contains(exclude.getView())){
+                if (exclude != null && cont.contains(exclude.getView())) {
                     continue;
                 }
                 desiredContext = cont;
@@ -54,7 +52,7 @@ public class MobileContextUtils implements IDriverPool {
             throw new NotFoundException("Desired context is not present");
         }
         LOGGER.info("Switching to context : " + desiredContext);
-  //      ((SupportsContextSwitching) driver).context(desiredContext);
+        //      ((SupportsContextSwitching) driver).context(desiredContext);
     }
 
     public enum View {

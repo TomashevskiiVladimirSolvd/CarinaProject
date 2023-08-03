@@ -11,12 +11,13 @@ public class ItemsPage extends ItemsPageAbstract {
 
     @FindBy(xpath = "//h2//span[contains(.,\" Neoprene Workout\")] ")
     private ExtendedWebElement smallPinkDumbells;
-    public ItemsPage(WebDriver driver){
+
+    public ItemsPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public ItemPage clickOnPinkDumbells(){
+    public ItemPage clickOnPinkDumbells() {
         smallPinkDumbells.click();
         return new ItemPage(driver);
     }

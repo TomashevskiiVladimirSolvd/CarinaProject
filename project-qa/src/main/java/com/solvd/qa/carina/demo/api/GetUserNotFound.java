@@ -13,9 +13,9 @@ import com.zebrunner.carina.utils.config.Configuration;
 @SuccessfulHttpStatus(status = HttpResponseStatusType.NOT_FOUND_404)
 public class GetUserNotFound extends AbstractApiMethodV2 {
 
-    public GetUserNotFound(String  badId) {
+    public GetUserNotFound(String badId) {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
-        replaceUrlPlaceholder("api_user",Configuration.getRequired("api_user"));
-        replaceUrlPlaceholder("api_bid",badId);
+        replaceUrlPlaceholder("api_user", Configuration.getRequired("api_user"));
+        replaceUrlPlaceholder("api_bid", badId);
     }
 }

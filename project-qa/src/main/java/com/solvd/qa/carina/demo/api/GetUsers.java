@@ -15,6 +15,6 @@ public class GetUsers extends AbstractApiMethodV2 {
 
     public GetUsers() {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
-        replaceUrlPlaceholder("api_user",Configuration.getRequired("api_user"));
+        replaceUrlPlaceholder("api_user", Configuration.getRequired("api_user"));
     }
 }

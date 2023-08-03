@@ -12,8 +12,8 @@ import com.zebrunner.carina.utils.config.Configuration;
 @ResponseTemplatePath(path = "api/reqres/_get/rsresources.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetResources extends AbstractApiMethodV2 {
-    public GetResources(){
+    public GetResources() {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
-        replaceUrlPlaceholder("api_resource",Configuration.getRequired("api_resource"));
+        replaceUrlPlaceholder("api_resource", Configuration.getRequired("api_resource"));
     }
 }

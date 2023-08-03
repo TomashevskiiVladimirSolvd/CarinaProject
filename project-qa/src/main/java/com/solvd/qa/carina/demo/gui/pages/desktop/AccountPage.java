@@ -12,12 +12,12 @@ public class AccountPage extends AccountPageAbstract {
     @FindBy(xpath = "//div[@id='a-page']/descendant::h1")
     private ExtendedWebElement yourAccoutTitle;
 
-    public AccountPage(WebDriver driver){
+    public AccountPage(WebDriver driver) {
         super(driver);
     }
 
-    public String getAccountTitle(){
-       return yourAccoutTitle.getText();
+    public String getAccountTitle() {
+        return yourAccoutTitle.getText();
     }
 
 

@@ -20,9 +20,13 @@ public abstract class HeaderComponentAbstract extends AbstractUIObject {
     protected abstract ItemsPage searhItem(String item);
 
     public abstract boolean isPageOpened();
+
     protected abstract void hoverAccountListSigninButton();
+
     protected abstract CreateAccountPage clickOnStartNewCustomerLink();
+
     protected abstract AccountPage clickOnAccountLink();
+
     protected abstract SignInPage clickOnAccountListSigninButton();
 
 }

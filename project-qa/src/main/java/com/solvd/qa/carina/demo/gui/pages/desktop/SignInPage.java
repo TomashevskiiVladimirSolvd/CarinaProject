@@ -12,28 +12,28 @@ public class SignInPage extends SignInPageAbstract {
     @FindBy(xpath = "//input[@id='ap_email']")
     private ExtendedWebElement emailTextBox;
 
-    @FindBy(xpath="//input[@id='continue']")
+    @FindBy(xpath = "//input[@id='continue']")
     private ExtendedWebElement continueButton;
 
     @FindBy(xpath = "//div[@id='auth-error-message-box']/descendant::h4")
     private ExtendedWebElement errorText;
 
-    public SignInPage(WebDriver driver){
+    public SignInPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public String getErrorText(){
-       return errorText.getText();
+    public String getErrorText() {
+        return errorText.getText();
     }
 
     @Override
-    public void setEmail(String email){
+    public void setEmail(String email) {
         emailTextBox.type(email);
     }
 
     @Override
-    public void clickOnContinueButton(){
+    public void clickOnContinueButton() {
         continueButton.click();
     }
 

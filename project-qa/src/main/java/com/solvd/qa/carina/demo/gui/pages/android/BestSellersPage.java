@@ -10,7 +10,8 @@ import org.openqa.selenium.support.FindBy;
 public class BestSellersPage extends BestSellersPageAbstract {
     @FindBy(xpath = "//span[@id='zg_banner_text']")
     private ExtendedWebElement bestSellersTitle;
-    public BestSellersPage(WebDriver driver){
+
+    public BestSellersPage(WebDriver driver) {
         super(driver);
     }
 

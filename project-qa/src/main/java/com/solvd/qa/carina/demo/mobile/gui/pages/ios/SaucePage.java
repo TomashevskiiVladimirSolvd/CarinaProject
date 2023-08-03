@@ -1,10 +1,9 @@
 package com.solvd.qa.carina.demo.mobile.gui.pages.ios;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
-
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
 
 public class SaucePage extends AbstractPage {
 

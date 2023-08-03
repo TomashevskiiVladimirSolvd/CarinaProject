@@ -1,12 +1,11 @@
 package com.solvd.qa.carina.demo.mobile.gui.pages.android;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
-
 import com.solvd.qa.carina.demo.mobile.gui.pages.common.ContactUsPageBase;
 import com.solvd.qa.carina.demo.mobile.gui.pages.common.WebViewPageBase;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = WebViewPageBase.class)
 public class WebViewPage extends WebViewPageBase {

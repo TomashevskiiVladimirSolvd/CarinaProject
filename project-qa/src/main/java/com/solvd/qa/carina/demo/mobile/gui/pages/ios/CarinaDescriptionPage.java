@@ -1,17 +1,12 @@
 package com.solvd.qa.carina.demo.mobile.gui.pages.ios;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
-
-import com.solvd.qa.carina.demo.mobile.gui.pages.common.CarinaDescriptionPageBase;
-import com.solvd.qa.carina.demo.mobile.gui.pages.common.ChartsPageBase;
-import com.solvd.qa.carina.demo.mobile.gui.pages.common.MapsPageBase;
-import com.solvd.qa.carina.demo.mobile.gui.pages.common.UIElementsPageBase;
-import com.solvd.qa.carina.demo.mobile.gui.pages.common.WebViewPageBase;
+import com.solvd.qa.carina.demo.mobile.gui.pages.common.*;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.utils.factory.DeviceType.Type;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.annotations.Predicate;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = Type.IOS_PHONE, parentClass = CarinaDescriptionPageBase.class)
 public class CarinaDescriptionPage extends CarinaDescriptionPageBase {

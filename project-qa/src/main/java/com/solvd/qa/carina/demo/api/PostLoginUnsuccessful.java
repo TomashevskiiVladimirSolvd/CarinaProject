@@ -15,7 +15,7 @@ import com.zebrunner.carina.utils.config.Configuration;
 @SuccessfulHttpStatus(status = HttpResponseStatusType.BAD_REQUEST_400)
 
 public class PostLoginUnsuccessful extends AbstractApiMethodV2 {
-    public PostLoginUnsuccessful(){
+    public PostLoginUnsuccessful() {
         super("api/reqres/_post/rqlog.json", "api/reqres/_post/rslog.json");
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
     }

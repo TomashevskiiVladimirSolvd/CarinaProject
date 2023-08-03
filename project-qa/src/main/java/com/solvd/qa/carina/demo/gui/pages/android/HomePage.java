@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = HomePageAbstract.class)
 public class HomePage extends HomePageAbstract {
-    @FindBy(xpath="//a[@id='nav-logobar-greeting']")
+    @FindBy(xpath = "//a[@id='nav-logobar-greeting']")
     private ExtendedWebElement signInButton;
 
     @FindBy(xpath = "//form[@id='nav-search-form']//input[@class='nav-input nav-progressive-attribute'] ")
@@ -31,20 +31,20 @@ public class HomePage extends HomePageAbstract {
         super(driver);
     }
 
-    public SignInPage clickOnSignInButton(){
+    public SignInPage clickOnSignInButton() {
         signInButton.click();
         return new SignInPage(driver);
     }
 
-    public void clickOnSearchTextBox(){
+    public void clickOnSearchTextBox() {
         searchTextBox.click();
     }
 
-    public void typeSearchTextBox(String item){
+    public void typeSearchTextBox(String item) {
         searchTextBox.type(item);
     }
 
-    public ItemsPage clickOnSearchButton(){
+    public ItemsPage clickOnSearchButton() {
         searchButton.click();
         return new ItemsPage(driver);
     }

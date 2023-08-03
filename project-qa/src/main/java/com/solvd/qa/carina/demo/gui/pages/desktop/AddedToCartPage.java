@@ -10,18 +10,16 @@ import org.openqa.selenium.support.FindBy;
 public class AddedToCartPage extends AddedToCartPageAbstract {
 
     @FindBy(xpath = "//div[@id='NATC_SMART_WAGON_CONF_MSG_SUCCESS']//span")
-    private  ExtendedWebElement addedToCartText;
+    private ExtendedWebElement addedToCartText;
 
-    public AddedToCartPage(WebDriver driver){
+    public AddedToCartPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public String getAddedToCartText(){
+    public String getAddedToCartText() {
         return addedToCartText.getText();
     }
-
-
 
 
 }

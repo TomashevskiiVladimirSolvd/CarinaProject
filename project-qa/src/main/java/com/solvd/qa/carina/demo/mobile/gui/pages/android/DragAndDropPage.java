@@ -1,13 +1,12 @@
 package com.solvd.qa.carina.demo.mobile.gui.pages.android;
 
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
-
 import com.zebrunner.carina.utils.mobile.IMobileUtils;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+import java.time.Duration;
 
 public class DragAndDropPage extends AbstractPage implements IMobileUtils {
 
@@ -31,18 +30,18 @@ public class DragAndDropPage extends AbstractPage implements IMobileUtils {
     }
 
     public void dragRight() {
-        dragAndDrop(target, rightDestination,Duration.ofSeconds(2),Duration.ofSeconds(3));
+        dragAndDrop(target, rightDestination, Duration.ofSeconds(2), Duration.ofSeconds(3));
     }
 
     public void dragDown() {
-        dragAndDrop(target, downDestination,Duration.ofSeconds(2),Duration.ofSeconds(3));
+        dragAndDrop(target, downDestination, Duration.ofSeconds(2), Duration.ofSeconds(3));
     }
 
     public void dragDiagonal() {
-        dragAndDrop(target, diagonalDestination,Duration.ofSeconds(2),Duration.ofSeconds(3));
+        dragAndDrop(target, diagonalDestination, Duration.ofSeconds(2), Duration.ofSeconds(3));
     }
 
-    public boolean isDragAndDropMessagePresent(){
+    public boolean isDragAndDropMessagePresent() {
         return !dragAndDropMessage.getText().isBlank();
     }
 

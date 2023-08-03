@@ -11,11 +11,12 @@ public class BestSellersPage extends BestSellersPageAbstract {
 
     @FindBy(xpath = "//span[@id='zg_banner_text']")
     private ExtendedWebElement bestSellersText;
-    public BestSellersPage(WebDriver driver){
+
+    public BestSellersPage(WebDriver driver) {
         super(driver);
     }
 
-    public String getBestSellersText(){
-       return bestSellersText.getText();
+    public String getBestSellersText() {
+        return bestSellersText.getText();
     }
 }

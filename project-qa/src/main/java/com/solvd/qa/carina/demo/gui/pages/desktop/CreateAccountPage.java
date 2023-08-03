@@ -25,33 +25,36 @@ public class CreateAccountPage extends CreateAccountPageAbstract {
     private ExtendedWebElement continueButton;
 
 
-    public CreateAccountPage(WebDriver driver){
+    public CreateAccountPage(WebDriver driver) {
         super(driver);
     }
 
 
     @Override
-    public void typeName(String name){
+    public void typeName(String name) {
         yourNameTextBox.type(name);
     }
+
     @Override
-    public void setEmail(String email){
+    public void setEmail(String email) {
         emailTextBox.type(email);
 
     }
+
     @Override
-    public void setPassword(String password){
-      passwordTextBox.type(password);
-    }
-    public void setRePassword(String rePassword){
-      reEnterPasswordTextBox.type(rePassword);
+    public void setPassword(String password) {
+        passwordTextBox.type(password);
     }
 
-    public void clickOnContinueButton(){
+    public void setRePassword(String rePassword) {
+        reEnterPasswordTextBox.type(rePassword);
+    }
+
+    public void clickOnContinueButton() {
         continueButton.click();
     }
 
-    public boolean isContinueButtonPresented(){
+    public boolean isContinueButtonPresented() {
         return continueButton.isElementPresent();
     }
 

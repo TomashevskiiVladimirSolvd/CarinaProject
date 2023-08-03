@@ -4,13 +4,13 @@ import com.solvd.qa.carina.demo.db.models.User;
 
 public interface UserMapper {
 
-	void create(User user);
+    void create(User user);
 
-	User findById(long id);
+    User findById(long id);
 
-	User findByUserName(String username);
+    User findByUserName(String username);
 
-	void update(User user);
+    void update(User user);
 
-	void delete(User user);
+    void delete(User user);
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = AccountPageAbstract.class)
 public class AccountPage extends AccountPageAbstract {
-    public AccountPage(WebDriver driver){
+    public AccountPage(WebDriver driver) {
         super(driver);
     }
 }

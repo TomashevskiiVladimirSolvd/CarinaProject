@@ -7,7 +7,9 @@ public abstract class CreateAccountPageAbstract extends AbstractPage {
     public CreateAccountPageAbstract(WebDriver driver) {
         super(driver);
     }
+
     protected abstract void typeName(String name);
+
     protected abstract void setEmail(String email);
 
     protected abstract void setPassword(String password);

@@ -13,10 +13,10 @@ import com.zebrunner.carina.utils.config.Configuration;
 @SuccessfulHttpStatus(status = HttpResponseStatusType.NOT_FOUND_404)
 
 public class GetResourceNotFound extends AbstractApiMethodV2 {
-    public GetResourceNotFound (String badId){
+    public GetResourceNotFound(String badId) {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
-        replaceUrlPlaceholder("api_resource",Configuration.getRequired("api_resource"));
-        replaceUrlPlaceholder("api_bid",badId);
+        replaceUrlPlaceholder("api_resource", Configuration.getRequired("api_resource"));
+        replaceUrlPlaceholder("api_bid", badId);
 
     }
 }

@@ -12,12 +12,12 @@ public class ItemsPage extends ItemsPageAbstract {
     @FindBy(xpath = "//div[@class='a-section aok-relative s-image-square-aspect']")
     private ExtendedWebElement smallPinkDumbells;
 
-    public ItemsPage(WebDriver driver){
+    public ItemsPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public ItemPage clickOnPinkDumbells(){
+    public ItemPage clickOnPinkDumbells() {
         smallPinkDumbells.click();
         return new ItemPage(driver);
     }

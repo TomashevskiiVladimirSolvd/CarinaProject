@@ -11,17 +11,18 @@ public class NavigationComponent extends NavigationComponentAbstract {
 
     @FindBy(xpath = "//div[@id='hmenu-content']//a[@class='hmenu-item']")
     private ExtendedWebElement bestSellerLink;
+
     public NavigationComponent(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public void clickOnAllMenuButton(){
+    public void clickOnAllMenuButton() {
         allMenuButton.click();
     }
 
     @Override
-    public BestSellersPage clickOnBestSellerLink(){
+    public BestSellersPage clickOnBestSellerLink() {
         bestSellerLink.click();
         return new BestSellersPage(driver);
     }

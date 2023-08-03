@@ -18,6 +18,6 @@ public class PostRegister extends AbstractApiMethodV2 {
     public PostRegister() {
         super("api/reqres/_post/rq.json", "api/reqres/_post/rs.json");
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
-        replaceUrlPlaceholder("api_register",Configuration.getRequired("api_register"));
+        replaceUrlPlaceholder("api_register", Configuration.getRequired("api_register"));
     }
 }
