@@ -6,7 +6,6 @@ import com.solvd.qa.carina.demo.gui.pages.common.HomePageAbstract;
 import com.solvd.qa.carina.demo.gui.pages.desktop.*;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
