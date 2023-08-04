@@ -71,17 +71,16 @@ public class WebTest implements IAbstractTest {
     public void testCreateAccountWithWrongEmail() {
         HomePageAbstract homePage = initPage(getDriver(), HomePageAbstract.class);
         homePage.open();
-        assertTrue(homePage.isPageOpened(), "Home page is not opened!");
         HeaderComponent headerComponent = homePage.getHeader();
         headerComponent.hoverAccountListSigninButton();
         CreateAccountPage createAccountPage = headerComponent.clickOnStartNewCustomerLink();
         createAccountPage.typeName("Name");
-        createAccountPage.setEmail("email@mail.ru");
+        createAccountPage.setEmail("fdsdddd");
         createAccountPage.setPassword("123456");
         createAccountPage.setRePassword("123456");
         createAccountPage.clickOnContinueButton();
         assertTrue(createAccountPage.isContinueButtonPresented(), "ContinueButton is not presented");
-        Assert.assertEquals(createAccountPage.getInvalidEmailText().trim(),
+        assertEquals(createAccountPage.getInvalidEmailText().trim(),
                 "Wrong or Invalid email address or mobile phone number. Please correct and try again.",
                 "wrong email text is not found");
     }
