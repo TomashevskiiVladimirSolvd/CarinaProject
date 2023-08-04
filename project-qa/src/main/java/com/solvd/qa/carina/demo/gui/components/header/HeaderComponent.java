@@ -5,6 +5,7 @@ import com.solvd.qa.carina.demo.gui.pages.desktop.CreateAccountPage;
 import com.solvd.qa.carina.demo.gui.pages.desktop.ItemsPage;
 import com.solvd.qa.carina.demo.gui.pages.desktop.SignInPage;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -29,8 +30,8 @@ public class HeaderComponent extends HeaderComponentAbstract {
     @FindBy(xpath = "//div[@id='nav-al-your-account']//span")
     private ExtendedWebElement accountLink;
 
-    public HeaderComponent(WebDriver driver) {
-        super(driver);
+    public HeaderComponent(WebDriver driver, SearchContext searchContext) {
+        super(driver,searchContext);
     }
 
 

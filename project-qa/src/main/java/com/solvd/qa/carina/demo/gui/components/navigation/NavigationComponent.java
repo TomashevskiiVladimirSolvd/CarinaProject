@@ -2,6 +2,7 @@ package com.solvd.qa.carina.demo.gui.components.navigation;
 
 import com.solvd.qa.carina.demo.gui.pages.desktop.BestSellersPage;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -12,8 +13,8 @@ public class NavigationComponent extends NavigationComponentAbstract {
     @FindBy(xpath = "//div[@id='hmenu-content']//a[@class='hmenu-item']")
     private ExtendedWebElement bestSellerLink;
 
-    public NavigationComponent(WebDriver driver) {
-        super(driver);
+    public NavigationComponent(WebDriver driver, SearchContext searchContext) {
+        super(driver,searchContext);
     }
 
     @Override
