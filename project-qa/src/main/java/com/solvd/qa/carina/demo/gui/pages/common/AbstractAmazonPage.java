@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class AbstractAmazonPage extends AbstractPage {
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//div[@id='nav-belt']")
     private HeaderComponent header;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//div[@id='nav-main']")
     private NavigationComponent navigationComponent;
 
     public AbstractAmazonPage(WebDriver driver) {
