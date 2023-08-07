@@ -22,7 +22,7 @@ public class WebTest implements IAbstractTest {
         ItemsPage itemsPage = headerComponent.searhItem("dumbbells");
         ItemPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
         AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
-        assertEquals(addedToCartPage.getAddedToCartText().trim(), "Added to Cart", "Added to cart text is not found");
+        assertEquals(addedToCartPage.getAddedToCartText().trim(), "Added to the Cart", "Added to cart text is not found");
     }
 
     @Test
