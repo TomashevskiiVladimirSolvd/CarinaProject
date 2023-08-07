@@ -22,7 +22,7 @@ public class WebTest implements IAbstractTest {
         ItemsPage itemsPage = headerComponent.searhItem("dumbbells");
         ItemPage basicsNeoprenDubbellPage = itemsPage.clickOnPinkDumbells();
         AddedToCartPage addedToCartPage = basicsNeoprenDubbellPage.addItemToCart();
-        assertEquals(addedToCartPage.getAddedToCartText().trim(), "Added to Cart", "added to cart text is not found");
+        assertEquals(addedToCartPage.getAddedToCartText().trim(), "Added to Cart", "Added to cart text is not found");
     }
 
     @Test
@@ -81,6 +81,6 @@ public class WebTest implements IAbstractTest {
         assertTrue(createAccountPage.isContinueButtonPresented(), "ContinueButton is not presented");
         assertEquals(createAccountPage.getInvalidEmailText().trim(),
                 "Wrong or Invalid email address or mobile phone number. Please correct and try again.",
-                "wrong email text is not found");
+                "Wrong email text is not found");
     }
 }
