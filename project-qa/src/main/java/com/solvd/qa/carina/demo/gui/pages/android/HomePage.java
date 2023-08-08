@@ -12,7 +12,7 @@ public class HomePage extends HomePageAbstract {
     @FindBy(xpath = "//a[@id='nav-logobar-greeting']")
     private ExtendedWebElement signInButton;
 
-    @FindBy(xpath = "//form[@id='nav-search-form']//input[@class='nav-input nav-progressive-attribute'] ")
+    @FindBy(xpath = "//input[@id='nav-search-keywords']")
     private ExtendedWebElement searchTextBox;
 
     @FindBy(xpath = "//form[@id='nav-search-form']//div[@class='nav-right'] ")
